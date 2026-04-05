@@ -13,17 +13,6 @@
       "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490429864627535962/pk49kb6s04.png?ex=69d4067a&is=69d2b4fa&hm=02b0a013206a942a188d7d87fdb15aa76bc5f94daed04e07a5d5edb24b10cd1c",
       "developerName": "NightFox",
       "localizedDescription": ""
-    },
-    {
-      "name": "앱 이름 2",
-      "bundleIdentifier": "com.nightfox.app2",
-      "version": "1.0",
-      "versionDate": "2026-04-06",
-      "versionDescription": "",
-      "downloadURL": "",
-      "iconURL": "",
-      "developerName": "NightFox",
-      "localizedDescription": ""
     }
   ]
 }
