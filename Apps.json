@@ -1,6 +1,8 @@
 {
   "name": "NightFox Repo",
   "identifier": "com.nightfox.repo",
+  "subtitle": "NightFox의 전용 앱 저장소",
+  "iconURL": "https://cdn.discordapp.com/attachments/1237455857839509575/1490420451359588432/v9smfkmzb2.jpeg?ex=69d3fdb6&is=69d2ac36&hm=c5ee464a67e172fd024abe875928d61b49b1b68d621353cb04718d563c3a40d7",
   "apps": [
     {
       "name": "Sample App",
