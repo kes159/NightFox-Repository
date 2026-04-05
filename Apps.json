@@ -1,0 +1,16 @@
+{
+  "name": "NightFox Repo",
+  "identifier": "com.nightfox.repo",
+  "apps": [
+    {
+      "name": "Sample App",
+      "bundleIdentifier": "com.nightfox.sample",
+      "version": "1.0.0",
+      "versionDate": "2026-04-06",
+      "downloadURL": "https://example.com/app.ipa",
+      "iconURL": "https://example.com/icon.png",
+      "developerName": "NightFox",
+      "localizedDescription": "나의 첫 번째 사이드로딩 소스입니다."
+    }
+  ]
+}
