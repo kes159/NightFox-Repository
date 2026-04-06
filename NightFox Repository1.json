@@ -1,16 +1,18 @@
 {
   "name": "NightFox Repository",
   "identifier": "com.nightfox.repository",
+  "subtitle": "NightFox's Private App Repository",
+  "description": "Custom automated source for Feather/AltStore",
   "apps": [
     {
       "name": "Infuse Plus v8.4.1",
       "bundleIdentifier": "com.nightfox.infuseplusv8.4.1",
       "developerName": "NightFox",
-      "subtitle": "NightFox source",
-      "localizedDescription": "Infuse Plus v8.4.1 - Automated Extract",
-      "iconURL": "https://i.imgur.com/nAsnPKq.png",
+      "subtitle": "NightFox Source",
+      "localizedDescription": "Verified app by NightFox.",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/Infuse%20Plus%20v8.4.1.png",
       "tintColor": "#00b39e",
-      "category": "utilities",
+      "category": "other",
       "versions": [
         {
           "version": "1.0.0",
