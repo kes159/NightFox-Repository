@@ -1,0 +1,24 @@
+{
+  "name": "NightFox Repository",
+  "identifier": "com.nightfox.repository",
+  "apps": [
+    {
+      "name": "Infuse Plus v8.4.1",
+      "bundleIdentifier": "com.nightfox.infuseplusv8.4.1",
+      "developerName": "NightFox",
+      "subtitle": "NightFox source",
+      "localizedDescription": "Infuse Plus v8.4.1 - Automated Extract",
+      "iconURL": "https://i.imgur.com/nAsnPKq.png",
+      "tintColor": "#00b39e",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-06",
+          "downloadURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/ipas/Infuse%20Plus%20v8.4.1.ipa",
+          "size": 83506392
+        }
+      ]
+    }
+  ]
+}
