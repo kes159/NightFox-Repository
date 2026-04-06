@@ -15,8 +15,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490429864627535962/pk49kb6s04.png?ex=69d4067a&is=69d2b4fa&hm=02b0a013206a942a188d7d87fdb15aa76bc5f94daed04e07a5d5edb24b10cd1c",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/nAsnPKq.png",
+      "tintColor": "#0522f9",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -32,7 +32,9 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSHumanReadableCopyright": "Copyright (c) 2024 Samara M"
+        }
       },
       "patreon": {}
     },
@@ -43,8 +45,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490430721616117820/m1jkthrmhm.png?ex=69d40746&is=69d2b5c6&hm=31f0067a5c81fa718e0a352f44189abb0c09d699f7070bec2e6593ca3d8d19d6",
-      "tintColor": "#007aff",
+      "iconURL": "https://avatars.githubusercontent.com/u/206676373?s=280&v=4",
+      "tintColor": "#04d4f9",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -60,7 +62,40 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAccentColorName": "AccentColor",
+          "NSAppleMusicUsageDescription": "The guest app is requesting for this permission.",
+          "NSBluetoothAlwaysUsageDescription": "The guest app is requesting for this permission.",
+          "NSBluetoothPeripheralUsageDescription": "The guest app is requesting for this permission.",
+          "NSCalendarsFullAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSCameraUsageDescription": "The guest app is requesting for this permission.",
+          "NSContactsUsageDescription": "The guest app is requesting for this permission.",
+          "NSFaceIDUsageDescription": "The guest app is requesting for this permission.",
+          "NSFallDetectionUsageDescription": "The guest app is requesting for this permission.",
+          "NSGKFriendListUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthClinicalHealthRecordsShareUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthShareUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthUpdateUsageDescription": "The guest app is requesting for this permission.",
+          "NSHomeKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSIdentityUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocalNetworkUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationTemporaryUsageDescriptionDictionary": "The guest app is requesting for this permission.",
+          "NSLocationUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationWhenInUseUsageDescription": "The guest app is requesting for this permission.",
+          "NSMicrophoneUsageDescription": "The guest app is requesting for this permission.",
+          "NSMotionUsageDescription": "The guest app is requesting for this permission.",
+          "NSNearbyInteractionAllowOnceUsageDescription": "The guest app is requesting for this permission.",
+          "NSNearbyInteractionUsageDescription": "The guest app is requesting for this permission.",
+          "NSPhotoLibraryAddUsageDescription": "The guest app is requesting for this permission.",
+          "NSPhotoLibraryUsageDescription": "The guest app is requesting for this permission.",
+          "NSRemindersFullAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSSensorKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSSiriUsageDescription": "The guest app is requesting for this permission.",
+          "NSSpeechRecognitionUsageDescription": "The guest app is requesting for this permission.",
+          "NSUserTrackingUsageDescription": "The guest app is requesting for this permission."
+        }
       },
       "patreon": {}
     },
@@ -71,8 +106,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490431401340702891/hqdrhf3jww.png?ex=69d407e8&is=69d2b668&hm=db7705702184357329ea533fe5930fbee9192c569e5b44e6afe937c34be7e23d",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/8XKHFLa.png",
+      "tintColor": "#fc0434",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -88,7 +123,17 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSCameraUsageDescription": "This lets you create videos using the app.",
+          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites.",
+          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
+          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
+          "NSAppleMusicUsageDescription": "This lets you add your own audio files to your videos.",
+          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
+          "NSLocationWhenInUseUsageDescription": "This enables local content discovery, improved recommendations, and enhanced search results.",
+          "NSContactsUsageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with.",
+          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created."
+        }
       },
       "patreon": {}
     },
@@ -99,8 +144,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490431542340878467/sqkdf0f8mf.png?ex=69d4080a&is=69d2b68a&hm=69ef98204ddc7ce19a52e2ec66455e3fa9e73139b4d88a4457c6add1f2ab081f",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/QP70lBE.jpeg",
+      "tintColor": "#ffd275",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -116,19 +161,35 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://facebook.com",
+          "NSBluetoothAlwaysUsageDescription": "This allows your phone to find and connect to the glasses using a Bluetooth connection.",
+          "NSFocusStatusUsageDescription": "This allows Instagram to check to see if you’ve been missing notifications from friends. You can always change this later in settings.",
+          "NSCameraUsageDescription": "Instagram uses your device's camera to do things like help you take photos, record videos and use effects.",
+          "NSUserTrackingUsageDescription": "This helps Instagram personalize ads we show you.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you save photos and videos to your Camera Roll.",
+          "NSLocationUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
+          "NSCalendarsUsageDescription": "This will let Instagram sync events to your calendar.",
+          "NSMicrophoneUsageDescription": "Instagram uses your device's microphone to do things like help you record videos and preview audio effects.",
+          "NSLocationWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "This will let Instagram sync events to your calendar.",
+          "NSFaceIDUsageDescription": "Enable Face ID for quick and secure authentication on Instagram.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
+          "NSContactsUsageDescription": "Instagram will use your contacts to suggest people and things you care about, and offer a better service. Your contacts will be periodically synced and securely stored on Instagram’s servers.",
+          "NSPhotoLibraryUsageDescription": "Instagram uses access to your camera roll to do things like help you share photos and videos to Instagram, apply effects and suggest photos and videos to share."
+        }
       },
       "patreon": {}
     },
     {
-      "name": "Reddit",
+      "name": "RedditApp",
       "bundleIdentifier": "com.reddit.Reddit",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490431981656473721/fm3k8sqnjb.png?ex=69d40873&is=69d2b6f3&hm=6a4ffa03ad5b087bda3d466b19a005f40e6e6e9bc5e993cc2d21d976f643017c",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/ut0vosB.png",
+      "tintColor": "#fc4404",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -144,7 +205,15 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSCalendarsUsageDescription": "Reddit needs access to your calendar to operate the community calendar widget.",
+          "NSCameraUsageDescription": "Use your camera to record videos. See our Privacy Policy for more information.",
+          "NSFaceIDUsageDescription": "Reddit needs access to Face ID to unlock your Vault.",
+          "NSMicrophoneUsageDescription": "Reddit needs access to your microphone to post videos with audio.",
+          "NSPhotoLibraryAddUsageDescription": "Reddit needs access to your photo library to post, save, and upload photos or videos.",
+          "NSPhotoLibraryUsageDescription": "Reddit needs access to your photo library to post, save, and upload photos or videos.",
+          "NSUserTrackingUsageDescription": "This allows Reddit to provide you with a better ads experience."
+        }
       },
       "patreon": {}
     },
@@ -155,8 +224,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490432661054034112/s87h7stf9p.png?ex=69d40915&is=69d2b795&hm=c2cc7d8ff762822e9a303392ad22c444712f6972e070df3ee264ca96fe836d7b",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/R36x019.png",
+      "tintColor": "#1c9cf4",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -172,19 +241,34 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://singular-bi.net",
+          "NSBluetoothAlwaysUsageDescription": "Twitter uses Bluetooth to discover Cast-enabled devices near you.",
+          "NSCameraUsageDescription": "Capture and post photos and videos from Twitter.",
+          "NSUserTrackingUsageDescription": "This helps Twitter show you more relevant ads.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you download photos and videos to your Photos.",
+          "NSLocalNetworkUsageDescription": "Twitter uses the local network to discover Cast-enabled devices on your WiFi network.",
+          "NSSpeechRecognitionUsageDescription": "Going forward, whenever you choose to share captions on this device, Apple will provide the service. Doing so helps make sure people of all hearing abilities can access your content.",
+          "NSLocationUsageDescription": "Enjoy Twitter tailored to your location.",
+          "NSCalendarsUsageDescription": "Add events to your calendar from Twitter.",
+          "NSMicrophoneUsageDescription": "Capture and post videos with sound from Twitter.",
+          "NSLocationWhenInUseUsageDescription": "Enjoy Twitter experience tailored to your location.",
+          "NSFaceIDUsageDescription": "Use FaceID to authenticate on Twitter.",
+          "NSContactsUsageDescription": "We will securely upload your contacts to our servers to help you connect with friends and suggest users to follow on X.",
+          "NSPhotoLibraryUsageDescription": "Allow access to share photos from your camera roll."
+        }
       },
       "patreon": {}
     },
     {
-      "name": "Widgetsmith",
+      "name": "WidgetSmith",
       "bundleIdentifier": "com.crossforward.WidgetSmith",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490432951106801694/dsttfrfhbt.png?ex=69d4095a&is=69d2b7da&hm=2a5c9f2abe598e0fa9a97b5f5e9ca9d08066fb206e0c72a6773ced04ad776521",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/CVGzB6c.png",
+      "tintColor": "#3484ec",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -200,7 +284,20 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAccentColorName": "AccentColor",
+          "NSAppleMusicUsageDescription": "You can create Music widgets which then play the associated music when tapped.",
+          "NSCalendarsFullAccessUsageDescription": "Your calendar events can be displayed in widgets.",
+          "NSCalendarsUsageDescription": "Your calendar events can be shown on widgets.",
+          "NSCameraUsageDescription": "The Mirror tool uses your selfie camera to provide you with a mirror view.",
+          "NSContactsUsageDescription": "Your contacts can be used in the Calendars when creating events.",
+          "NSHealthShareUsageDescription": "Your activity and health data can be shown on widgets.",
+          "NSHealthUpdateUsageDescription": "Your activity and health data can be shown on widgets.",
+          "NSLocationWhenInUseUsageDescription": "Your location is used to add favorite locations.",
+          "NSPhotoLibraryUsageDescription": "You can display your photos as widgets or make wallpapers.",
+          "NSRemindersFullAccessUsageDescription": "Your reminders can be shown on widgets.",
+          "NSRemindersUsageDescription": "Your reminders can be shown on a widget."
+        }
       },
       "patreon": {}
     },
@@ -211,8 +308,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490433142773907629/r6099p3h4s.png?ex=69d40988&is=69d2b808&hm=01ebf5aceceb79c89cdd2cb5d98ec605992218dff32dc096d8a60909dd97a02a",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/YsvHLfB.png",
+      "tintColor": "#24ccfc",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -228,7 +325,11 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "StikDebug needs access to devices on your local network so it can connect to the targets you add to the Device Library.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "StikDebug uses location to stay running in the background and maintain your JIT connection.",
+          "NSLocationWhenInUseUsageDescription": "StikDebug uses location to stay running in the background and maintain your JIT connection."
+        }
       },
       "patreon": {}
     },
@@ -239,8 +340,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490433287858946273/njbx073vr2.png?ex=69d409aa&is=69d2b82a&hm=5d21350a3ef50bfef05927dfb4f6430fd4da678c364c68ea78ad567161559d64",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/HkKr5M0.png",
+      "tintColor": "#c0683c",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -256,19 +357,21 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAccentColorName": "AccentColor"
+        }
       },
       "patreon": {}
     },
     {
-      "name": "respringapp",
+      "name": "RespringApp",
       "bundleIdentifier": "com.respring.app",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490433433103503551/8pkrp4d60b.png?ex=69d409cd&is=69d2b84d&hm=c7ec4a72f6fbc9a7d838c917826dd492394d452b282cfefd5accdc1bf53c9c0a",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/4IQg2oj.png",
+      "tintColor": "#7f7f7f",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -295,8 +398,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490433611831443618/dtz92nqp9j.png?ex=69d409f7&is=69d2b877&hm=014ebcab1c742281bb012d609f8a8af8aa6fa7ed0d394cf2a7115b44fc5159ed",
-      "tintColor": "#007aff",
+      "iconURL": "https://fastly.mwm-storage.mwmcdn.com/raw_files/5dc7068b-04fc-4489-85d4-5eff9868a13a?height=640&format=webp",
+      "tintColor": "#d731be",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -312,19 +415,23 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSCameraUsageDescription": "Video Capture",
+          "NSPhotoLibraryAddUsageDescription": "To stitch your images.",
+          "NSPhotoLibraryUsageDescription": "To stitch your images."
+        }
       },
       "patreon": {}
     },
     {
-      "name": "nPlayer Plus",
+      "name": "nPlayer",
       "bundleIdentifier": "com.newin.nplayer",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490433731708846110/xjjmdknz9p.png?ex=69d40a14&is=69d2b894&hm=fd0b65af5735220d712861921d7a3d549c8add312c1682d87ac618928928bbaa",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/RCJOOaL.png",
+      "tintColor": "#fcec14",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -340,7 +447,16 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAppleMusicUsageDescription": "nPlayer needs access to your Media Library to play audios and videos in the App.",
+          "NSBluetoothAlwaysUsageDescription": "nPlayer needs bluetooth access to be able to find bluetooth devices in the app.",
+          "NSBluetoothPeripheralUsageDescription": "nPlayer needs bluetooth access to be able to find bluetooth devices in the app.",
+          "NSFaceIDUsageDescription": "nPlayer needs access to your Face ID to identify the access permissions in the app.",
+          "NSLocalNetworkUsageDescription": "nPlayer uses the local network to discover Cast-enabled devices on your WiFi\nnetwork.",
+          "NSMicrophoneUsageDescription": "The app will access your microphone.",
+          "NSPhotoLibraryAddUsageDescription": "nPlayer needs access to your Photo Library to save photos in the App.",
+          "NSPhotoLibraryUsageDescription": "nPlayer needs access to your Photo Library to show photos in the App."
+        }
       },
       "patreon": {}
     },
@@ -352,7 +468,7 @@
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
       "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490434515515080888/5mfkvhp66w.png?ex=69d40acf&is=69d2b94f&hm=79496e9a623269c3ea5e15187435e62ed7357abf182f4981872af3da64c3d8ca",
-      "tintColor": "#007aff",
+      "tintColor": "#ff0011",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -368,7 +484,9 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAccentColorName": "AccentColor"
+        }
       },
       "patreon": {}
     },
@@ -379,8 +497,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490434658998157384/55vxrhkdw5.png?ex=69d40af1&is=69d2b971&hm=aed995f1e5699980e73fdb85f859459afa7557f17f37dc3259d88707f01fdb33",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/Qgg26jG.png",
+      "tintColor": "#3ca4fc",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -396,19 +514,22 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAccentColorName": "AccentColor",
+          "NSLocalNetworkUsageDescription": "Asspp requires this permission to communicate with install service on your device."
+        }
       },
       "patreon": {}
     },
     {
       "name": "OldOS",
-      "bundleIdentifier": "com.zrc.BudgetingBuddy",
+      "bundleIdentifier": "com.zurac.OldOS",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490434975655268392/sm276652ts.png?ex=69d40b3d&is=69d2b9bd&hm=6c3cca87da06aad2de680ccff75e7fe01611fda818c73a0cefe87d1d4849ca78",
-      "tintColor": "#007aff",
+      "iconURL": "https://pbs.twimg.com/profile_images/1416783489106591746/DGy5_hww_400x400.jpg",
+      "tintColor": "#6b737c",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -424,7 +545,17 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAppleMusicUsageDescription": "To view, play, and experience your music in OldOS, please enable access to your music library. ",
+          "NSCameraUsageDescription": "To take photos in OldOS, please enable access to your camera.",
+          "NSContactsUsageDescription": "To view and manage your contacts in OldOS, please enable access to your contacts list.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "To enable maps to work properly, and see your current wifi network in Settings, please enable access to your location. Then close and re-open the Maps app.",
+          "NSLocationAlwaysUsageDescription": "To enable maps to work properly, and see your current wifi network in Settings, please enable access to your location. Then close and re-open the Maps app.",
+          "NSLocationWhenInUseUsageDescription": "To enable maps to work properly, and see your current wifi network in Settings, please enable access to your location. Then close and re-open the Maps app.",
+          "NSMicrophoneUsageDescription": "To record your audio while filming a video in OldOS, please in enable microphone access.",
+          "NSPhotoLibraryAddUsageDescription": "To view, manage, and add photos to your photo library in OldOS, please enable access. Then close and re-open the Photos app.",
+          "NSPhotoLibraryUsageDescription": "To view, manage, and add photos to your photo library in OldOS, please enable access. Then close and re-open the Photos app."
+        }
       },
       "patreon": {}
     },
@@ -435,8 +566,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490435108325294140/9wpmhz6r3z.png?ex=69d40b5c&is=69d2b9dc&hm=5fdf012276bba21df8977846e8eeead67edf5ff0589420cc8ff955fccdd35735",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/O6yX7wU.png",
+      "tintColor": "#fc2c54",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -452,7 +583,12 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAccentColorName": "AccentColor",
+          "NSFaceIDUsageDescription": "Aidoku needs FaceID permissions for user-defined settings",
+          "NSLocalNetworkUsageDescription": "Aidoku needs permission to connect to local Komga and Kavita servers",
+          "NSPhotoLibraryUsageDescription": "Aidoku needs permission to save pages in your photo library"
+        }
       },
       "patreon": {}
     },
@@ -463,8 +599,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490435261295759522/409ws7fj21.png?ex=69d40b81&is=69d2ba01&hm=308065d53fbb32b610a265ae1464505162b4a4f5df0a6f7edc4a04db0ae865b6",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/yzHlDCg.png",
+      "tintColor": "#74d4e4",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -491,8 +627,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490435387662012600/81rhd959tv.png?ex=69d40b9f&is=69d2ba1f&hm=9f78dbeb561b949be280a7dfe5a3021e2fdd0e63e76293f4ca32627ee0aedac4",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/sYbyhMj.png",
+      "tintColor": "#046cbc",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -508,7 +644,12 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSFaceIDUsageDescription": "Tachimanga needs FaceID permissions for user-defined settings",
+          "NSLocalNetworkUsageDescription": "Sync configs with nearby devices running the Tachimanga App.",
+          "NSPhotoLibraryUsageDescription": "Tachimanga needs permission to save pages in your photo library",
+          "NSUserTrackingUsageDescription": "This identifier will only be used to deliver personalized ads"
+        }
       },
       "patreon": {}
     },
@@ -519,8 +660,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490454796535201832/rw96tbswn1.png?ex=69d41db2&is=69d2cc32&hm=9fdf2dc6d1ee315db99fb215791f53a3f7088d5b19eef48db53bb35e6b81cacc",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/yVwNWvt.png",
+      "tintColor": "#4e8d7f",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -536,7 +677,10 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSFaceIDUsageDescription": "We need this permission to provide Face ID option while unlocking the App.",
+          "NSPhotoLibraryAddUsageDescription": "We need this permission to save images to your photo library."
+        }
       },
       "patreon": {}
     },
@@ -547,8 +691,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490435630126338148/40124fstpx.png?ex=69d40bd9&is=69d2ba59&hm=01330be3478b3ea516fc3d89e5941d1039dca69b509e1a211adabf4b83e4b839",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/jJ7UpcN.png",
+      "tintColor": "#2444f4",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -564,7 +708,10 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSFaceIDUsageDescription": "Ensure that the operation is being performed by the user themselves.",
+          "NSPhotoLibraryUsageDescription": "Choose images"
+        }
       },
       "patreon": {}
     },
@@ -575,8 +722,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490435757847089374/vwqjb05dmr.png?ex=69d40bf7&is=69d2ba77&hm=08335dfeadb6b23b17f300f363e5385eed508d215f73e32eef4ed3b43a8bbc23",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/yUpA2Us.png",
+      "tintColor": "#07f7e3",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -592,7 +739,13 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://adjust-skadnetwork.com",
+          "NSCameraUsageDescription": "Aloha needs permissions to be able to save media to Camera Roll",
+          "NSLocalNetworkUsageDescription": "Aloha Browser uses the local network to discover Cast-enabled devices on your Wi-Fi network",
+          "NSLocationWhenInUseUsageDescription": "Websites you visit may request your location.",
+          "NSPhotoLibraryAddUsageDescription": "Aloha needs permissions to be able to save media to Camera Roll"
+        }
       },
       "patreon": {}
     },
@@ -604,7 +757,7 @@
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
       "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490436057810866347/37d54pb8br.png?ex=69d40c3f&is=69d2babf&hm=58fad83494e05df271fef14a69fbaa7ab02743e8d8d30404ee357eddfcca27c0",
-      "tintColor": "#007aff",
+      "tintColor": "#e50401",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -632,7 +785,7 @@
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
       "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490436239881535678/0x5wdvknfw.png?ex=69d40c6a&is=69d2baea&hm=f872d1d8b8045b2f411f1fabab50e9fc16d5c225a2133cbfc27e9a0de9034b39",
-      "tintColor": "#007aff",
+      "tintColor": "#e50401",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -660,7 +813,7 @@
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
       "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490436426213621902/tk0kk1zw3b.png?ex=69d40c96&is=69d2bb16&hm=7c65ca91fdc391e4fd3540aa81e6acb851d9f3f598ead34201a89571d2f1c3e6",
-      "tintColor": "#007aff",
+      "tintColor": "#e50401",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -690,14 +843,14 @@
       "patreon": {}
     },
     {
-      "name": "Plague Inc.",
+      "name": "Plague Inc. ",
       "bundleIdentifier": "com.ndemiccreations.plagueinc",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490436663275556914/w8z4v26qf2.png?ex=69d40ccf&is=69d2bb4f&hm=23a7f973ec6b2f265bc6972dca60fcfb1e1c3a708f2195ba34c23a300d5c303e",
-      "tintColor": "#007aff",
+      "iconURL": "https://play-lh.googleusercontent.com/qLgeusnY6S6JC_qB7s1qz5rPzrzMIuiXDvQN2R9qZhuQb3xTw4adMD0-Ktk12LrLwFB_wn_ftNVvLDsixSBeGQ",
+      "tintColor": "#c5063b",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -718,14 +871,14 @@
       "patreon": {}
     },
     {
-      "name": "PPSSPP Gold",
+      "name": "PPSSPP",
       "bundleIdentifier": "org.ppsspp.ppsspp-gold",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
       "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490436835581759508/3nd947n6xv.png?ex=69d40cf8&is=69d2bb78&hm=3770490166b3bdae3b0d2def8684483ec1b13e242ef5295d57c6e500c91b75fa",
-      "tintColor": "#007aff",
+      "tintColor": "#347fca",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -741,19 +894,23 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSCameraUsageDescription": "Your camera may be used to emulate Go!Cam, a camera accessory",
+          "NSLocationWhenInUseUsageDescription": "Your location may be used to emulate Go!Explore, a GPS accessory",
+          "NSMicrophoneUsageDescription": "Your microphone may be used to emulate Go!Cam/Talkman, a microphone accessory"
+        }
       },
       "patreon": {}
     },
     {
-      "name": "Bloons TD 6",
+      "name": "BloonsTD6",
       "bundleIdentifier": "com.ninjakiwi.bloonstd6",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490436955622604830/hzzq271v12.png?ex=69d40d15&is=69d2bb95&hm=128cc1af68c5d4d26cc0eefc4ce149183ec5814bb3e15104583ae227c762cd9a",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/j88OeI7.png",
+      "tintColor": "#dc0404",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -769,7 +926,9 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/"
+        }
       },
       "patreon": {}
     },
@@ -780,8 +939,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490437088213074102/bdwhf738tx.png?ex=69d40d34&is=69d2bbb4&hm=bc03c23049f01f78f711d6f6e0a1bc5b01e3a7ae4526792d7c87dc2091a3de80",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/kzhaesu.png",
+      "tintColor": "#80241c",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -808,8 +967,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490437219310108794/3qb8d034q6.png?ex=69d40d54&is=69d2bbd4&hm=cde80f9d013f382c146a3b8f4075057c3d5bd7dcf071b48b2b1139f3f79eab7f",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/a7eQvKW.png",
+      "tintColor": "#8224ee",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -825,7 +984,11 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Delta uses the local network to communicate with AltServer and enable JIT.",
+          "NSMicrophoneUsageDescription": "Delta uses your microphone to emulate the Nintendo DS microphone.",
+          "NSPhotoLibraryUsageDescription": "Press \"OK\" to allow Delta to use images from your Photo Library as game artwork."
+        }
       },
       "patreon": {}
     },
@@ -864,8 +1027,8 @@
       "developerName": "NightFox",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490437657728122991/wqnsbxsst6.png?ex=69d40dbc&is=69d2bc3c&hm=e27295af3bdc8ad7a36ebd27fdfd40a28e79925ac145775bc1b530ac91795997",
-      "tintColor": "#007aff",
+      "iconURL": "https://i.imgur.com/3uGA9rf.png",
+      "tintColor": "#653db1",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -899,7 +1062,9 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "MeloNX needs access to your Photo Library in order to save images"
+        }
       },
       "patreon": {}
     },
