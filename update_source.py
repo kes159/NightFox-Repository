@@ -5,7 +5,7 @@ import plistlib
 from datetime import datetime
 
 # --- 설정값 ---
-JSON_FILE = "NightFox Repository.json"
+JSON_FILE = "NightFox_Repository.json"
 REPO_URL = "https://github.com/kes159/NightFox-Repository"
 TAG = "1.0"
 
@@ -38,7 +38,7 @@ def apply_nightfox_branding(app_dict):
 if __name__ == "__main__":
     # 사이드스토어 필수 헤더를 포함한 기본 구조
     base_data = {
-        "name": "NightFox Repository",
+        "name": "NightFox_Repository",
         "identifier": "com.nightfox.repo", # 사이드스토어 필수!
         "subtitle": "NightFox's App Repository",
         "description": "Welcome to NightFox's source!",
