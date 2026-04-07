@@ -1,12 +1,21 @@
 {
   "name": "NightFox Repository",
+  "identifier": "com.nightfox.repo",
   "subtitle": "NightFox's App Repository",
-  "description": "Welcome to my source! Here you'll find all of my apps.",
+  "description": "Welcome to NightFox's source!",
   "iconURL": "https://i.imgur.com/EVyT7Ji.png",
-  "website": "https://altstudio.app",
-  "patreonURL": "https://patreon.com/altstudio",
+  "website": "https://github.com/kes159/NightFox-Repository",
   "tintColor": "#00b39e",
   "featuredApps": [],
+  "news": [
+    {
+      "title": "Source Updated",
+      "identifier": "update-20260407",
+      "caption": "Latest apps added.",
+      "date": "2026-04-07",
+      "tintColor": "#00b39e"
+    }
+  ],
   "apps": [
     {
       "name": "Feather",
@@ -81,7 +90,7 @@
         {
           "version": "3.7.4",
           "date": "2026-04-07",
-          "localizedDescription": "Release!",
+          "localizedDescription": "",
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/LiveContainer+SideStore.Nightly.ipa",
           "size": 34540268
         },
@@ -1253,6 +1262,5 @@
       },
       "patreon": {}
     }
-  ],
-  "news": []
+  ]
 }
