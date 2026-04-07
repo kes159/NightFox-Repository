@@ -13,6 +13,7 @@ def extract_ipa_info_only(ipa_path):
     """IPA 파일에서 정보를 추출합니다."""
     try:
         with zipfile.ZipFile(ipa_path, 'r') as z:
+            # Info.plist 찾기
             plist_candidates = [f for f in z.namelist() if f.count('/') == 2 and f.endswith('Info.plist') and 'Payload/' in f]
             if not plist_candidates:
                 plist_candidates = sorted([f for f in z.namelist() if 'Info.plist' in f and 'Payload/' in f], key=len)
@@ -33,15 +34,14 @@ def extract_ipa_info_only(ipa_path):
     except: return None
 
 def apply_nightfox_branding(app_dict):
-    """앱 데이터에 NightFox 브랜딩을 강제로 입힙니다."""
+    """지정한 3곳에만 NightFox 브랜딩을 적용합니다."""
+    # 요청하신 대로 딱 이 3개만 수정합니다.
     app_dict["developerName"] = "NightFox"
     app_dict["subtitle"] = "NightFox"
     app_dict["localizedDescription"] = "NightFox"
-    # 권한 설명 필드가 있다면 그것도 수정
-    if "appCapabilities" in app_dict and "infoPlist" in app_dict["appCapabilities"]:
-        for key in app_dict["appCapabilities"]["infoPlist"]:
-            if key.endswith("UsageDescription"):
-                app_dict["appCapabilities"]["infoPlist"][key] = "NightFox"
+    
+    # Privacy(권한 설명) 부분은 삭제하거나 수정하지 않고 
+    # IPA에서 추출된 원본 데이터를 그대로 유지하도록 이 함수에서는 건드리지 않습니다.
 
 if __name__ == "__main__":
     if not os.path.exists(JSON_FILE):
@@ -57,19 +57,16 @@ if __name__ == "__main__":
         info = extract_ipa_info_only(ipa_file)
         if not info: continue
 
-        # 다운로드 URL 생성
         download_url = f"{REPO_URL}/releases/download/{TAG}/{ipa_file.replace(' ', '%20')}"
         
-        # 버전 객체 생성
         new_version_entry = {
             "version": info['version'],
             "date": datetime.now().strftime("%Y-%m-%d"),
-            "localizedDescription": "NightFox",
+            "localizedDescription": "NightFox", # 버전 설명도 NightFox로 통일
             "downloadURL": download_url,
             "size": info['size']
         }
 
-        # 기존 앱 리스트에서 찾기
         app_entry = next((a for a in data['apps'] if a['bundleIdentifier'] == info['bundleID']), None)
 
         if app_entry:
@@ -77,13 +74,14 @@ if __name__ == "__main__":
             app_entry["version"] = info['version']
             app_entry["versionDate"] = new_version_entry["date"]
             app_entry["downloadURL"] = download_url
-            apply_nightfox_branding(app_entry) # 여기서 강제 수정됨
+            
+            # 브랜딩 적용 (Privacy는 건드리지 않음)
+            apply_nightfox_branding(app_entry)
             
             if "versions" not in app_entry: app_entry["versions"] = []
-            # 중복 버전 제거 후 최신 버전 삽입
             app_entry["versions"] = [v for v in app_entry["versions"] if v['version'] != info['version']]
             app_entry["versions"].insert(0, new_version_entry)
-            print(f"ℹ️ {info['name']}: 업데이트 및 브랜딩 완료")
+            print(f"ℹ️ {info['name']}: 업데이트 완료 (Privacy 유지)")
         else:
             # 2. 새 앱 추가
             new_app = {
@@ -92,16 +90,15 @@ if __name__ == "__main__":
                 "version": info['version'],
                 "versionDate": new_version_entry["date"],
                 "downloadURL": download_url,
-                "iconURL": "https://i.imgur.com/nAsnPKq.png", # 기본 아이콘
+                "iconURL": "https://i.imgur.com/nAsnPKq.png", 
                 "tintColor": "#00b39e",
                 "category": "other",
                 "versions": [new_version_entry]
             }
-            apply_nightfox_branding(new_app) # 여기서 "NightFox" 주입
+            apply_nightfox_branding(new_app)
             data['apps'].append(new_app)
-            print(f"✅ {info['name']}: 새 앱 추가 및 브랜딩 완료")
+            print(f"✅ {info['name']}: 새 앱 추가 완료 (Privacy 유지)")
 
-    # 저장
+    # 결과 저장
     with open(JSON_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
-        
