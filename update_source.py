@@ -101,7 +101,11 @@ def main():
             app_entry["versions"] = [v for v in app_entry["versions"] if v['version'] != info['version']]
             app_entry["versions"].insert(0, new_version)
         else:
-            data['apps'].append({
+            # 기존 방식 (리스트 맨 앞에 추가)
+# data['apps'].insert(0, new_app)
+
+# 변경 방식 (리스트 맨 뒤에 추가)
+                data['apps'].append(new_app)
                 "name": info['name'], "bundleIdentifier": info['bundleID'], "developerName": "NightFox",
                 "version": info['version'], "versionDate": new_version["date"], "downloadURL": download_url,
                 "iconURL": current_icon_url, "tintColor": "#00b39e", "versions": [new_version]
