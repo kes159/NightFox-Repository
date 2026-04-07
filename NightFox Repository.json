@@ -1157,9 +1157,11 @@
         {
           "version": "8.4.1",
           "date": "2026-04-07",
+          "localizedDescription": "NightFox",
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/Infuse.8.4.1.ipa",
           "size": 83506392,
-          "localizedDescription": "NightFox"
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
       "appPermissions": {
@@ -1175,9 +1177,33 @@
           "NSPhotoLibraryAddUsageDescription": "Used for saving QR code"
         }
       },
-      "patreon": {},
-      "version": "8.4.1",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/Infuse.8.4.1.ipa"
+      "patreon": {}
+    },
+    {
+      "name": "HD Flix",
+      "bundleIdentifier": "com.box.hd.flix.drama.hub",
+      "marketplaceID": "",
+      "developerName": "Example Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://i.imgur.com/3J6Swhe.png",
+      "tintColor": "#7f7f7f",
+      "category": "other",
+      "screenshots": [],
+      "versions": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://postbacks-app.com",
+          "NSCameraUsageDescription": "",
+          "NSLocationWhenInUseUsageDescription": "",
+          "NSMicrophoneUsageDescription": "The application needs access to the microphone to recognize your voice to convert voice to title of the journey.",
+          "NSPhotoLibraryUsageDescription": "The application needs access to the photo library to create the journey.",
+          "NSSpeechRecognitionUsageDescription": "The application needs access to speech recognition to convert your voice to title of the journey.",
+          "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
+        }
+      },
+      "patreon": {}
     }
   ],
   "news": []
