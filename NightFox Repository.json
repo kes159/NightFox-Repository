@@ -1122,6 +1122,24 @@
         }
       },
       "patreon": {}
+    },
+    {
+      "name": "Messenger ",
+      "bundleIdentifier": "com.facebook.Messenger",
+      "developerName": "NightFox",
+      "version": "555.0.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.2/Messenger.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/com.facebook.Messenger.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "555.0.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.2/Messenger.ipa",
+          "size": 77394904
+        }
+      ]
     }
   ],
   "news": []
