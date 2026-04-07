@@ -1258,7 +1258,7 @@
           "NSPhotoLibraryUsageDescription": "The application needs access to the photo library to create the journey.",
           "NSSpeechRecognitionUsageDescription": "The application needs access to speech recognition to convert your voice to title of the journey.",
           "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
-          }
+        }
       }
     }
   ]
