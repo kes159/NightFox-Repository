@@ -62,7 +62,7 @@ if __name__ == "__main__":
         new_version_entry = {
             "version": info['version'],
             "date": datetime.now().strftime("%Y-%m-%d"),
-            "localizedDescription": ""Release!",
+            "localizedDescription": "Release!",
             "downloadURL": download_url,
             "size": info['size']
         }
