@@ -1092,6 +1092,36 @@
         }
       },
       "patreon": {}
+    },
+    {
+      "name": "Threads",
+      "bundleIdentifier": "com.burbn.barcelona",
+      "marketplaceID": "",
+      "developerName": "Example Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://i.imgur.com/FJReYS7.png",
+      "tintColor": "#7f7f7f",
+      "category": "other",
+      "screenshots": [],
+      "versions": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://facebook.com",
+          "NSCameraUsageDescription": "Threads uses your camera to do things like help you take photos when posting.",
+          "NSContactsUsageDescription": "This helps you and others find your friends and more.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Select \"Always Allow\" to make some features work. You can change this anytime in Settings.",
+          "NSLocationAlwaysUsageDescription": "Select \"Always Allow\" to make some features work. You can change this anytime in Settings.",
+          "NSLocationUsageDescription": "Select ok to make some features work. You can change this anytime in Settings.",
+          "NSLocationWhenInUseUsageDescription": "Your location will be used to show places nearby, allowing you to tag a place on your post.",
+          "NSMicrophoneUsageDescription": "Threads uses your microphone to do things like help you record audio when posting.",
+          "NSMotionUsageDescription": "This makes some features work. You can always change this later in Settings.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you save photos and videos to your Camera Roll.",
+          "NSPhotoLibraryUsageDescription": "This lets you share photos from your library and save photos to your Camera Roll."
+        }
+      },
+      "patreon": {}
     }
   ],
   "news": []
