@@ -1,0 +1,39 @@
+name: Update SideStore Source
+on:
+  release:
+    types: [published] # 릴리스가 '발행'될 때만 실행
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: # 저장소에 파일을 쓸 수 있는 권한 부여
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Download IPA from Release
+        run: |
+          # 릴리스에 업로드된 첫 번째 .ipa 파일을 다운로드하여 app.ipa로 저장
+          curl -L -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          $(curl -s https://api.github.com/repos/${{ github.repository }}/releases/${{ github.event.release.id }} \
+          | jq -r '.assets[] | select(.name | endswith(".ipa")) | .url') \
+          -H "Accept: application/octet-stream" -o app.ipa
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run Script
+        env:
+          DOWNLOAD_URL: ${{ github.event.release.assets[0].browser_download_url }}
+        run: python update_source.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add apps.json
+          git commit -m "chore: update apps.json for release ${{ github.event.release.tag_name }}" || echo "No changes to commit"
+          git push
