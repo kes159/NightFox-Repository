@@ -94,15 +94,15 @@ def main():
         else:
             # [수정 핵심] 변수 정의를 명확히 분리하여 문법 오류를 방지합니다.
             new_app_data = {
-                "name": info['name'],
-                "bundleIdentifier": info['bundleID'],
-                "developerName": "NightFox",
-                "version": info['version'],
-                "versionDate": new_v["date"],
-                "downloadURL": download_url,
-                "iconURL": current_icon_url,
-                "tintColor": "#00b39e",
-                "versions": [new_v]
+    "name": info['name'],
+    "bundleIdentifier": info['bundleID'],
+    "developerName": "NightFox",
+    "version": info['version'],
+    "versionDate": new_v["date"],
+    "downloadURL": download_url,
+    "iconURL": current_icon_url,
+    "tintColor": "#00b39e",
+    "versions": [new_v]
             }
             data['apps'].append(new_app_data)
             print(f"✅ {info['name']}: 목록 맨 아래에 추가 완료")
@@ -112,3 +112,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
