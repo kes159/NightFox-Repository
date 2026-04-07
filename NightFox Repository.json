@@ -1098,74 +1098,6 @@
       "patreon": {}
     },
     {
-      "name": "Threads",
-      "bundleIdentifier": "com.burbn.barcelona",
-      "marketplaceID": "",
-      "developerName": "Example Developer",
-      "subtitle": "NightFox",
-      "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://i.imgur.com/I9y82CE.png",
-      "tintColor": "#7f7f7f",
-      "category": "other",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "423.1.0",
-          "date": "2026-04-07",
-          "localizedDescription": "First AltStore release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.3/ThreadSaver-v423.1.0.ipa",
-          "size": 84436954,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAdvertisingAttributionReportEndpoint": "https://facebook.com",
-          "NSCameraUsageDescription": "Threads uses your camera to do things like help you take photos when posting.",
-          "NSContactsUsageDescription": "This helps you and others find your friends and more.",
-          "NSLocationAlwaysAndWhenInUseUsageDescription": "Select \"Always Allow\" to make some features work. You can change this anytime in Settings.",
-          "NSLocationAlwaysUsageDescription": "Select \"Always Allow\" to make some features work. You can change this anytime in Settings.",
-          "NSLocationUsageDescription": "Select ok to make some features work. You can change this anytime in Settings.",
-          "NSLocationWhenInUseUsageDescription": "Your location will be used to show places nearby, allowing you to tag a place on your post.",
-          "NSMicrophoneUsageDescription": "Threads uses your microphone to do things like help you record audio when posting.",
-          "NSMotionUsageDescription": "This makes some features work. You can always change this later in Settings.",
-          "NSPhotoLibraryAddUsageDescription": "This lets you save photos and videos to your Camera Roll.",
-          "NSPhotoLibraryUsageDescription": "This lets you share photos from your library and save photos to your Camera Roll."
-        }
-      },
-      "patreon": {}
-    },
-    {
-      "name": "Messenger ",
-      "bundleIdentifier": "com.facebook.Messenger",
-      "marketplaceID": "",
-      "developerName": "NightFox",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/com.facebook.Messenger.png",
-      "tintColor": "#00b39e",
-      "category": "other",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "555.0.0",
-          "date": "2026-04-07",
-          "localizedDescription": "First AltStore release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.2/Messenger.ipa",
-          "size": 77394904,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": {}
-    },
-    {
       "name": "EeveeSpotify",
       "bundleIdentifier": "com.spotify.client",
       "marketplaceID": "",
@@ -1180,8 +1112,11 @@
         {
           "version": "9.1.34",
           "date": "2026-04-07",
+          "localizedDescription": "First AltStore release!",
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.3.1/EeveeSpotify-9.1.34.ipa",
-          "size": 99039859
+          "size": 99039859,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
       "appPermissions": {
@@ -1205,11 +1140,7 @@
           "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads or content to you."
         }
       },
-      "patreon": {},
-      "version": "9.1.34",
-      "versionDate": "2026-04-07",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.3.1/EeveeSpotify-9.1.34.ipa",
-      "size": 99039859
+      "patreon": {}
     }
   ],
   "news": []
