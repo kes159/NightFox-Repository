@@ -1261,6 +1261,26 @@
         }
       },
       "patreon": {}
+    },
+    {
+      "name": "PPSSPP Gold",
+      "bundleIdentifier": "org.ppsspp.ppsspp-gold",
+      "version": "10017.1.491",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/PPSSPP.Gold.-.Kamohacks.v10017.ipa",
+      "iconURL": "https://i.imgur.com/nAsnPKq.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "10017.1.491",
+          "date": "2026-04-07",
+          "localizedDescription": "",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/PPSSPP.Gold.-.Kamohacks.v10017.ipa",
+          "size": 20683269
+        }
+      ],
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox"
     }
   ]
 }
