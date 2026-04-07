@@ -1164,6 +1164,41 @@
         "privacy": {}
       },
       "patreon": {}
+    },
+    {
+      "name": "EeveeSpotify",
+      "bundleIdentifier": "com.spotify.client",
+      "marketplaceID": "",
+      "developerName": "Example Developer",
+      "subtitle": "NightFox",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://i.imgur.com/y7qxsmG.png",
+      "tintColor": "#04e154",
+      "category": "other",
+      "screenshots": [],
+      "versions": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "This will let you play your imported music on Spotify.",
+          "NSBluetoothAlwaysUsageDescription": "This lets you unlock new ways of interacting with other devices compatible with Spotify via Bluetooth.",
+          "NSCalendarsUsageDescription": "This lets Spotify view and add events to your calendar.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "This lets Spotify add events to your calendar.",
+          "NSCameraUsageDescription": "This lets you use your camera to scan or upload images.",
+          "NSContactsUsageDescription": "This lets Spotify access calendars you may have shared with your contacts.",
+          "NSFaceIDUsageDescription": "This lets you set access restrictions using Face ID.",
+          "NSHealthShareUsageDescription": "Spotify will use HealthKit data to provide personalised audio recommendations for your workouts.",
+          "NSHealthUpdateUsageDescription": "Spotify will use HealthKit data to provide personalised audio recommendations for your workouts.",
+          "NSLocalNetworkUsageDescription": "This lets you listen on different devices. Spotify will also get access to local audio files.",
+          "NSLocationWhenInUseUsageDescription": "Your location is used to improve your recommendations and experience on Spotify.",
+          "NSMicrophoneUsageDescription": "This lets you control Spotify using your voice.",
+          "NSMotionUsageDescription": "We will use this to understand which audio motivates you most.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you save images to your Photo Library.",
+          "NSPhotoLibraryUsageDescription": "This lets you select images from your Photo Library.",
+          "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads or content to you."
+        }
+      },
+      "patreon": {}
     }
   ],
   "news": []
