@@ -31,9 +31,23 @@ jobs:
         run: python update_source.py
 
       - name: Commit and Push
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
+          
+          # 변경사항 확인 및 커밋
           git add "NightFox Repository.json"
-          git commit -m "Update source for 40 apps" || echo "No changes"
-          git push
+          if [ -d "icons" ]; then
+            git add icons/*.png
+          fi
+          
+          # 변경사항이 있을 때만 커밋 및 푸시
+          if ! git diff --cached --quiet; then
+            git commit -m "Update source and icons for ${{ github.event.release.tag_name }}"
+            # 인증 정보가 포함된 주소로 푸시
+            git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
+          else
+            echo "No changes to commit"
+          fi
