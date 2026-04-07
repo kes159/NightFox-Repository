@@ -38,7 +38,7 @@
       },
       "patreon": {}
     },
-    {
+   {
       "name": "LC+SS 3.7.4 Nightly",
       "bundleIdentifier": "com.896m8fsv43.aq7806s6ls",
       "marketplaceID": "",
@@ -49,45 +49,22 @@
       "tintColor": "#04d4f9",
       "category": "other",
       "screenshots": [],
-      "versions": [3.7.4],
+      "versions": [
+        {
+          "version": "3.7.4",
+          "date": "2026-04-07",
+          "localizedDescription": "NightFox",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/LiveContainer+SideStore.Nightly.ipa",
+          "size": 34540268
+        }
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
-          "NSAccentColorName": "AccentColor",
-          "NSAppleMusicUsageDescription": "The guest app is requesting for this permission.",
-          "NSBluetoothAlwaysUsageDescription": "The guest app is requesting for this permission.",
-          "NSBluetoothPeripheralUsageDescription": "The guest app is requesting for this permission.",
-          "NSCalendarsFullAccessUsageDescription": "The guest app is requesting for this permission.",
-          "NSCalendarsWriteOnlyAccessUsageDescription": "The guest app is requesting for this permission.",
-          "NSCameraUsageDescription": "The guest app is requesting for this permission.",
-          "NSContactsUsageDescription": "The guest app is requesting for this permission.",
-          "NSFaceIDUsageDescription": "The guest app is requesting for this permission.",
-          "NSFallDetectionUsageDescription": "The guest app is requesting for this permission.",
-          "NSGKFriendListUsageDescription": "The guest app is requesting for this permission.",
-          "NSHealthClinicalHealthRecordsShareUsageDescription": "The guest app is requesting for this permission.",
-          "NSHealthShareUsageDescription": "The guest app is requesting for this permission.",
-          "NSHealthUpdateUsageDescription": "The guest app is requesting for this permission.",
-          "NSHomeKitUsageDescription": "The guest app is requesting for this permission.",
-          "NSIdentityUsageDescription": "The guest app is requesting for this permission.",
-          "NSLocalNetworkUsageDescription": "The guest app is requesting for this permission.",
-          "NSLocationAlwaysAndWhenInUseUsageDescription": "The guest app is requesting for this permission.",
-          "NSLocationTemporaryUsageDescriptionDictionary": "The guest app is requesting for this permission.",
-          "NSLocationUsageDescription": "The guest app is requesting for this permission.",
-          "NSLocationWhenInUseUsageDescription": "The guest app is requesting for this permission.",
-          "NSMicrophoneUsageDescription": "The guest app is requesting for this permission.",
-          "NSMotionUsageDescription": "The guest app is requesting for this permission.",
-          "NSNearbyInteractionAllowOnceUsageDescription": "The guest app is requesting for this permission.",
-          "NSNearbyInteractionUsageDescription": "The guest app is requesting for this permission.",
-          "NSPhotoLibraryAddUsageDescription": "The guest app is requesting for this permission.",
-          "NSPhotoLibraryUsageDescription": "The guest app is requesting for this permission.",
-          "NSRemindersFullAccessUsageDescription": "The guest app is requesting for this permission.",
-          "NSSensorKitUsageDescription": "The guest app is requesting for this permission.",
-          "NSSiriUsageDescription": "The guest app is requesting for this permission.",
-          "NSSpeechRecognitionUsageDescription": "The guest app is requesting for this permission.",
-          "NSUserTrackingUsageDescription": "The guest app is requesting for this permission."
+          "NSCameraUsageDescription": "NightFox",
+          "NSMicrophoneUsageDescription": "NightFox"
         }
-      },
-      "patreon": {}
+      }
     },
     {
       "name": "LC+SS 3.7.2 Stable",
