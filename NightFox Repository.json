@@ -1104,7 +1104,14 @@
       "tintColor": "#7f7f7f",
       "category": "other",
       "screenshots": [],
-      "versions": [],
+      "versions": [
+        {
+          "version": "423.1.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.3/ThreadSaver-v423.1.0.ipa",
+          "size": 84436954
+        }
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
@@ -1121,7 +1128,9 @@
           "NSPhotoLibraryUsageDescription": "This lets you share photos from your library and save photos to your Camera Roll."
         }
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "423.1.0",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.3/ThreadSaver-v423.1.0.ipa"
     },
     {
       "name": "Messenger ",
