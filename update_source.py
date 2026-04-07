@@ -62,7 +62,7 @@ if __name__ == "__main__":
         new_version_entry = {
             "version": info['version'],
             "date": datetime.now().strftime("%Y-%m-%d"),
-            "localizedDescription": "NightFox", # 버전 설명도 NightFox로 통일
+            "localizedDescription": ""Release!",
             "downloadURL": download_url,
             "size": info['size']
         }
