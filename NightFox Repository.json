@@ -3,8 +3,8 @@
   "subtitle": "NightFox's App Repository",
   "description": "Welcome to my source! Here you'll find all of my apps.",
   "iconURL": "https://cdn.discordapp.com/attachments/1237455857839509575/1490422712596955176/ww69f88mpj.png?ex=69d3ffd1&is=69d2ae51&hm=8853f02c28ce04169b4d423802d5eceb5494d10bf34db8013a4b0fcc57b91d5b",
-  "website": "",
-  "patreonURL": "",
+  "website": "https://altstudio.app",
+  "patreonURL": "https://patreon.com/altstudio",
   "tintColor": "#00b39e",
   "featuredApps": [],
   "apps": [
@@ -1100,7 +1100,7 @@
       "developerName": "Example Developer",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://i.imgur.com/FJReYS7.png",
+      "iconURL": "https://i.imgur.com/I9y82CE.png",
       "tintColor": "#7f7f7f",
       "category": "other",
       "screenshots": [],
@@ -1126,20 +1126,30 @@
     {
       "name": "Messenger ",
       "bundleIdentifier": "com.facebook.Messenger",
+      "marketplaceID": "",
       "developerName": "NightFox",
-      "version": "555.0.0",
-      "versionDate": "2026-04-07",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.2/Messenger.ipa",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
       "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/com.facebook.Messenger.png",
       "tintColor": "#00b39e",
+      "category": "other",
+      "screenshots": [],
       "versions": [
         {
           "version": "555.0.0",
           "date": "2026-04-07",
+          "localizedDescription": "First AltStore release!",
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.2/Messenger.ipa",
-          "size": 77394904
+          "size": 77394904,
+          "buildVersion": null,
+          "minOSVersion": null
         }
-      ]
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     }
   ],
   "news": []
