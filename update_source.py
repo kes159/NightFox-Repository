@@ -60,13 +60,7 @@ def main():
         with open(JSON_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
     else:
-        # 기본 JSON 구조 유지
-        data = {
-            "name": "NightFox Repository", 
-            "subtitle": "NightFox's App Repository",
-            "description": "Welcome to my source!",
-            "apps": []
-        }
+        data = {"name": "NightFox Repository", "subtitle": "NightFox's App Repository", "description": "Welcome!", "apps": []}
 
     repo_url = os.getenv("REPO_URL", "https://github.com/kes159/NightFox-Repository")
     raw_url = repo_url.replace("github.com", "raw.githubusercontent.com") + "/main/"
@@ -86,38 +80,32 @@ def main():
             current_icon_url = f"{raw_url}{icon_path}" if icon_path else "https://i.imgur.com/nAsnPKq.png"
 
         download_url = f"{repo_url}/releases/download/{tag}/{ipa_file.replace(' ', '%20')}"
-        new_version_info = {
-            "version": info['version'], 
-            "date": datetime.now().strftime("%Y-%m-%d"), 
-            "downloadURL": download_url, 
-            "size": info['size']
-        }
+        new_v = {"version": info['version'], "date": datetime.now().strftime("%Y-%m-%d"), "downloadURL": download_url, "size": info['size']}
 
         if app_entry:
-            # 기존 앱 업데이트
+            # 기존 앱 업데이트 (순서 유지)
             app_entry["version"] = info['version']
             app_entry["iconURL"] = current_icon_url
             app_entry["downloadURL"] = download_url
             if "versions" not in app_entry: app_entry["versions"] = []
-            # 중복 버전 제거 후 최신 버전 추가
             app_entry["versions"] = [v for v in app_entry["versions"] if v['version'] != info['version']]
-            app_entry["versions"].insert(0, new_version_info)
-            print(f"ℹ️ {info['name']}: 정보를 업데이트했습니다.")
+            app_entry["versions"].insert(0, new_v)
+            print(f"ℹ️ {info['name']}: 업데이트됨")
         else:
-            # [수정된 핵심 로직] 신규 앱 데이터를 딕셔너리로 생성 후 append
+            # 신규 앱 추가 (가장 아래에 추가)
             new_app_data = {
                 "name": info['name'],
                 "bundleIdentifier": info['bundleID'],
                 "developerName": "NightFox",
                 "version": info['version'],
-                "versionDate": new_version_info["date"],
+                "versionDate": new_v["date"],
                 "downloadURL": download_url,
                 "iconURL": current_icon_url,
                 "tintColor": "#00b39e",
-                "versions": [new_version_info]
+                "versions": [new_v]
             }
-            data['apps'].append(new_app_data) # 리스트 맨 마지막에 추가
-            print(f"✅ {info['name']}: 목록 맨 아래에 새로 추가되었습니다.")
+            data['apps'].append(new_app_data)
+            print(f"✅ {info['name']}: 목록 끝에 추가됨")
 
     with open(JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
