@@ -83,16 +83,16 @@ def main():
         new_v = {"version": info['version'], "date": datetime.now().strftime("%Y-%m-%d"), "downloadURL": download_url, "size": info['size']}
 
         if app_entry:
-            # 기존 앱 정보 업데이트 (순서 유지)
+            # 기존 앱 정보 업데이트
             app_entry["version"] = info['version']
             app_entry["iconURL"] = current_icon_url
             app_entry["downloadURL"] = download_url
             if "versions" not in app_entry: app_entry["versions"] = []
             app_entry["versions"] = [v for v in app_entry["versions"] if v['version'] != info['version']]
             app_entry["versions"].insert(0, new_v)
-            print(f"ℹ️ {info['name']}: 기존 정보 업데이트")
+            print(f"ℹ️ {info['name']}: 기존 정보 업데이트 완료")
         else:
-            # [해결포인트] 신규 앱 데이터를 변수에 먼저 정의한 후 append 합니다.
+            # [수정 핵심] 변수 정의를 명확히 분리하여 문법 오류를 방지합니다.
             new_app_data = {
                 "name": info['name'],
                 "bundleIdentifier": info['bundleID'],
