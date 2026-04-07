@@ -1146,14 +1146,22 @@
       "name": "Infuse",
       "bundleIdentifier": "com.firecore.infuse",
       "marketplaceID": "",
-      "developerName": "Example Developer",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
       "iconURL": "https://i.imgur.com/hvsToc2.png",
       "tintColor": "#fc6c04",
       "category": "other",
       "screenshots": [],
-      "versions": [],
+      "versions": [
+        {
+          "version": "8.4.1",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/Infuse.8.4.1.ipa",
+          "size": 83506392,
+          "localizedDescription": "NightFox"
+        }
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
@@ -1167,7 +1175,9 @@
           "NSPhotoLibraryAddUsageDescription": "Used for saving QR code"
         }
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "8.4.1",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/Infuse.8.4.1.ipa"
     }
   ],
   "news": []
