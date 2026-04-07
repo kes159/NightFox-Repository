@@ -1,5 +1,5 @@
 {
-  "name": "NightFox Repository",
+  "name": "NightFox_Repository",
   "subtitle": "NightFox's App Repository",
   "description": "Welcome to my source! Here you'll find all of my apps.",
   "iconURL": "https://i.imgur.com/EVyT7Ji.png",
@@ -1250,9 +1250,7 @@
           "NSSpeechRecognitionUsageDescription": "The application needs access to speech recognition to convert your voice to title of the journey.",
           "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
         }
-      },
-      "patreon": {}
+      }
     }
-  ],
-  "news": []
+  ]
 }
