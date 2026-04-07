@@ -750,14 +750,14 @@
       "patreon": {}
     },
     {
-      "name": "Infinity Blade",
+      "name": "IB1",
       "bundleIdentifier": "com.chairentertainment.birthright",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "NightFox",
       "localizedDescription": "NightFox",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490436057810866347/37d54pb8br.png?ex=69d40c3f&is=69d2babf&hm=58fad83494e05df271fef14a69fbaa7ab02743e8d8d30404ee357eddfcca27c0",
-      "tintColor": "#e50401",
+      "iconURL": "https://i.imgur.com/y7TAXG9.png",
+      "tintColor": "#d83030",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -778,14 +778,14 @@
       "patreon": {}
     },
     {
-      "name": "Infinity Blade II",
+      "name": "IB2",
       "bundleIdentifier": "com.chairentertainment.IB2",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "NightFox",
       "localizedDescription": "NightFox",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490436239881535678/0x5wdvknfw.png?ex=69d40c6a&is=69d2baea&hm=f872d1d8b8045b2f411f1fabab50e9fc16d5c225a2133cbfc27e9a0de9034b39",
-      "tintColor": "#e50401",
+      "iconURL": "https://i.imgur.com/Sv0ZKx4.png",
+      "tintColor": "#ce2929",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -801,19 +801,21 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSUbiquitousDisplaySet": "com.chair.IB2_iCloudDisplay"
+        }
       },
       "patreon": {}
     },
     {
-      "name": "Infinity Blade III",
+      "name": "IB3",
       "bundleIdentifier": "com.chairentertainment.IB3",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "NightFox",
       "localizedDescription": "NightFox",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490436426213621902/tk0kk1zw3b.png?ex=69d40c96&is=69d2bb16&hm=7c65ca91fdc391e4fd3540aa81e6acb851d9f3f598ead34201a89571d2f1c3e6",
-      "tintColor": "#e50401",
+      "iconURL": "https://i.imgur.com/quDbVGy.png",
+      "tintColor": "#cd0b0b",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -829,7 +831,9 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSUbiquitousDisplaySet": "com.chair.IB3_iCloudDisplay"
+        }
       },
       "patreon": {}
     },
@@ -958,7 +962,7 @@
       "developerName": "NightFox",
       "subtitle": "NightFox",
       "localizedDescription": "NightFox",
-      "iconURL": "https://cdn.discordapp.com/attachments/1490429098978316499/1490437543932461296/ws9t71s8n2.png?ex=69d40da1&is=69d2bc21&hm=16a77efecb0b18301f5dce3c52f05050660791458d61f46054f45467f3a1387b",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzDw2Cm5zMwwkJ3oYWkQkLjJVzYYeJ5PhKg&s9/1490437543932461296/ws9t71s8n2.png?ex=69d40da1&is=69d2bc21&hm=16a77efecb0b18301f5dce3c52f05050660791458d61f46054f45467f3a1387b",
       "tintColor": "#007aff",
       "category": "other",
       "screenshots": [],
