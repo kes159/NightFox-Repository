@@ -66,26 +66,24 @@ def main():
         with open(JSON_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
     else:
-        data = {"name": "NightFox Repository", "identifier": "com.nightfox.repository", "apps": []}
+        data = {"name": "NightFox Repository", "subtitle": "NightFox's App Repository", "description": "Welcome!", "apps": []}
 
     repo_url = os.getenv("REPO_URL", "https://github.com/kes159/NightFox-Repository")
     raw_url = repo_url.replace("github.com", "raw.githubusercontent.com") + "/main/"
-    tag = os.getenv("TAG_NAME", "v1.0.0")
+    tag = os.getenv("TAG_NAME", "")
 
     for ipa_file in ipa_files:
         info = extract_ipa_info_only(ipa_file)
         if not info: continue
 
-        # [핵심 로직] 기존 앱이 있고, 이미 iconURL이 존재하는지 확인
+        # 기존 앱 확인
         app_entry = next((item for item in data['apps'] if item["bundleIdentifier"] == info['bundleID']), None)
         
         current_icon_url = None
         if app_entry and app_entry.get("iconURL"):
-            # 이미 아이콘 URL이 있으면 추출 과정을 건너뛰고 기존 주소 유지
             current_icon_url = app_entry["iconURL"]
             print(f"ℹ️ {info['name']}: 기존 아이콘 주소를 유지합니다.")
         else:
-            # 아이콘 주소가 없거나 신규 앱일 때만 추출 실행
             icon_path = extract_icon_logic(ipa_file, info['bundleID'])
             current_icon_url = f"{raw_url}{icon_path}" if icon_path else "https://i.imgur.com/nAsnPKq.png"
             print(f"✨ {info['name']}: 새 아이콘을 추출했습니다.")
@@ -95,21 +93,26 @@ def main():
 
         if app_entry:
             app_entry["version"] = info['version']
-            app_entry["iconURL"] = current_icon_url # 유지 또는 신규 등록
+            app_entry["iconURL"] = current_icon_url
             app_entry["downloadURL"] = download_url
             if "versions" not in app_entry: app_entry["versions"] = []
             app_entry["versions"] = [v for v in app_entry["versions"] if v['version'] != info['version']]
             app_entry["versions"].insert(0, new_version)
         else:
-            # 기존 방식 (리스트 맨 앞에 추가)
-# data['apps'].insert(0, new_app)
-
-# 변경 방식 (리스트 맨 뒤에 추가)
-                data['apps'].append(new_app)
-                "name": info['name'], "bundleIdentifier": info['bundleID'], "developerName": "NightFox",
-                "version": info['version'], "versionDate": new_version["date"], "downloadURL": download_url,
-                "iconURL": current_icon_url, "tintColor": "#00b39e", "versions": [new_version]
-            })
+            # 새로운 앱 데이터 생성 후 리스트의 가장 마지막에 추가
+            new_app = {
+                "name": info['name'],
+                "bundleIdentifier": info['bundleID'],
+                "developerName": "NightFox",
+                "version": info['version'],
+                "versionDate": new_version["date"],
+                "downloadURL": download_url,
+                "iconURL": current_icon_url,
+                "tintColor": "#00b39e",
+                "versions": [new_version]
+            }
+            data['apps'].append(new_app)
+            print(f"✅ {info['name']}: 목록 맨 아래에 추가되었습니다.")
 
     with open(JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
