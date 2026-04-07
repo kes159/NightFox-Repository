@@ -38,7 +38,7 @@
       },
       "patreon": {}
     },
-   {
+    {
       "name": "LC+SS 3.7.4 Nightly",
       "bundleIdentifier": "com.896m8fsv43.aq7806s6ls",
       "marketplaceID": "",
@@ -81,9 +81,9 @@
         {
           "version": "3.7.4",
           "date": "2026-04-07",
+          "localizedDescription": "NightFox",
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/LiveContainer+SideStore.Nightly.ipa",
-          "size": 34540268,
-          "localizedDescription": "NightFox"
+          "size": 34540268
         },
         {
           "version": "3.7.2",
@@ -134,7 +134,8 @@
       },
       "patreon": {},
       "version": "3.7.4",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/LiveContainer+SideStore.Nightly.ipa"
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/LiveContainer+SideStore.Nightly.ipa",
+      "versionDate": "2026-04-07"
     },
     {
       "name": "YTPlus",
