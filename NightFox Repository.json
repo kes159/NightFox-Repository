@@ -42,14 +42,14 @@
       "name": "LC+SS 3.7.4 Nightly",
       "bundleIdentifier": "com.896m8fsv43.aq7806s6ls",
       "marketplaceID": "",
-      "developerName": "Example Developer",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
       "iconURL": "https://avatars.githubusercontent.com/u/206676373?s=280&v=4",
       "tintColor": "#04d4f9",
       "category": "other",
       "screenshots": [],
-      "versions": [],
+      "versions": [3.7.4],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
