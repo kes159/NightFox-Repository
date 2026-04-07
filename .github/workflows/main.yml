@@ -12,18 +12,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Get IPA from Release
-        id: get_ipa
+      - name: Download All IPAs from Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # 릴리스 자산 중 .ipa로 끝나는 파일의 다운로드 URL 추출
-          IPA_URL=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/${{ github.event.release.id }} | jq -r '.assets[] | select(.name | endswith(".ipa")) | .url' | head -n 1)
-          
-          # 파일 다운로드
-          curl -L -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/octet-stream" $IPA_URL -o app.ipa
-          
-          # 브라우저용 다운로드 URL 추출 (JSON에 넣을 용도)
-          BROWSER_URL=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/${{ github.event.release.id }} | jq -r '.assets[] | select(.name | endswith(".ipa")) | .browser_download_url' | head -n 1)
-          echo "DOWNLOAD_URL=$BROWSER_URL" >> $GITHUB_ENV
+          # 현재 릴리스에 포함된 모든 .ipa 파일을 다운로드
+          gh release download ${{ github.event.release.tag_name }} --pattern "*.ipa"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,6 +25,9 @@ jobs:
           python-version: '3.10'
 
       - name: Run Script
+        env:
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+          TAG_NAME: ${{ github.event.release.tag_name }}
         run: python update_source.py
 
       - name: Commit and Push
@@ -38,5 +35,5 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add "NightFox Repository.json"
-          git commit -m "Update source for ${{ github.event.release.tag_name }}" || echo "No changes"
+          git commit -m "Update source for 40 apps" || echo "No changes"
           git push
