@@ -10,7 +10,7 @@ REPO_NAME = "NightFox Repository"
 REPO_ID = "com.nightfox.repository"
 # 깃허브 주소는 액션에서 동적으로 처리하거나 아래처럼 고정합니다.
 RAW_URL = "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/"
-JSON_FILE = "NightFox Repository1.json"
+JSON_FILE = "NightFox Repository.json"
 
 def extract_ipa_info(ipa_path):
     """IPA 내부에서 실제 이름, 번들ID, 버전을 추출합니다."""
