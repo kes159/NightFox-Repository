@@ -10,18 +10,29 @@ JSON_FILE = "NightFox Repository.json"
 ICON_DIR = "icons"
 
 def extract_ipa_info_only(ipa_path):
-    """아이콘 제외, 기본 정보만 빠르게 추출합니다."""
+    """부속 파일이 아닌 진짜 앱 정보만 추출하도록 필터링을 강화합니다."""
     try:
         with zipfile.ZipFile(ipa_path, 'r') as z:
-            plist_path = [f for f in z.namelist() if 'Info.plist' in f and 'Payload/' in f][0]
-            with z.open(plist_path) as f:
-                plist = plistlib.load(f)
-                return {
-                    "name": plist.get('CFBundleDisplayName') or plist.get('CFBundleName') or "Unknown App",
-                    "bundleID": plist.get('CFBundleIdentifier'),
-                    "version": plist.get('CFBundleShortVersionString') or "1.0.0",
-                    "size": os.path.getsize(ipa_path)
-                }
+            # 1. Payload/폴더명.app/Info.plist 패턴인 것만 추출 (프레임워크 배제)
+            plist_candidates = [f for f in z.namelist() if f.count('/') == 2 and f.endswith('Info.plist') and 'Payload/' in f]
+            
+            # 후보가 없으면 전체에서 찾되, 가장 경로가 짧은 것을 우선 (메인 앱일 확률이 높음)
+            if not plist_candidates:
+                plist_candidates = sorted([f for f in z.namelist() if 'Info.plist' in f and 'Payload/' in f], key=len)
+
+            for plist_path in plist_candidates:
+                with z.open(plist_path) as f:
+                    plist = plistlib.load(f)
+                    
+                    # 진짜 앱인지 판별하는 기준: CFBundleExecutable이 있고, LSRequiresIPhoneOS가 있는 경우
+                    if plist.get('CFBundleExecutable') and plist.get('LSRequiresIPhoneOS') is not None:
+                        return {
+                            "name": plist.get('CFBundleDisplayName') or plist.get('CFBundleName') or "Unknown App",
+                            "bundleID": plist.get('CFBundleIdentifier'),
+                            "version": plist.get('CFBundleShortVersionString') or "1.0.0",
+                            "size": os.path.getsize(ipa_path)
+                        }
+        return None
     except: return None
 
 def extract_icon_logic(ipa_path, bundle_id):
