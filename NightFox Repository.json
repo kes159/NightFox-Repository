@@ -79,13 +79,6 @@
       "screenshots": [],
       "versions": [
         {
-          "version": "3.7.4",
-          "date": "2026-04-07",
-          "localizedDescription": "NightFox",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/LiveContainer+SideStore.Nightly.ipa",
-          "size": 34540268
-        },
-        {
           "version": "3.7.2",
           "date": "2026-04-05T15:00:00+09:00",
           "localizedDescription": "",
