@@ -23,56 +23,1186 @@
         {
           "version": "2.6.0",
           "date": "2026-04-05T15:00:00+09:00",
-          "localizedDescription": "NightFox",
+          "localizedDescription": "",
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Feather.2.6.0.ipa",
           "size": 100000,
           "buildVersion": null,
           "minOSVersion": null
         }
-      ]
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSHumanReadableCopyright": "Copyright (c) 2024 Samara M"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "LiveContainer",
+      "bundleIdentifier": "com.kdt.livecontainer",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://avatars.githubusercontent.com/u/206676373?s=280&v=4",
+      "tintColor": "#04d4f9",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "3.7.2",
+          "date": "2026-04-05T15:00:00+09:00",
+          "localizedDescription": "",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/LiveContainer+SideStore.3.7.2.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAccentColorName": "AccentColor",
+          "NSAppleMusicUsageDescription": "The guest app is requesting for this permission.",
+          "NSBluetoothAlwaysUsageDescription": "The guest app is requesting for this permission.",
+          "NSBluetoothPeripheralUsageDescription": "The guest app is requesting for this permission.",
+          "NSCalendarsFullAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSCameraUsageDescription": "The guest app is requesting for this permission.",
+          "NSContactsUsageDescription": "The guest app is requesting for this permission.",
+          "NSFaceIDUsageDescription": "The guest app is requesting for this permission.",
+          "NSFallDetectionUsageDescription": "The guest app is requesting for this permission.",
+          "NSGKFriendListUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthClinicalHealthRecordsShareUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthShareUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthUpdateUsageDescription": "The guest app is requesting for this permission.",
+          "NSHomeKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSIdentityUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocalNetworkUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationTemporaryUsageDescriptionDictionary": "The guest app is requesting for this permission.",
+          "NSLocationUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationWhenInUseUsageDescription": "The guest app is requesting for this permission.",
+          "NSMicrophoneUsageDescription": "The guest app is requesting for this permission.",
+          "NSMotionUsageDescription": "The guest app is requesting for this permission.",
+          "NSNearbyInteractionAllowOnceUsageDescription": "The guest app is requesting for this permission.",
+          "NSNearbyInteractionUsageDescription": "The guest app is requesting for this permission.",
+          "NSPhotoLibraryAddUsageDescription": "The guest app is requesting for this permission.",
+          "NSPhotoLibraryUsageDescription": "The guest app is requesting for this permission.",
+          "NSRemindersFullAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSSensorKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSSiriUsageDescription": "The guest app is requesting for this permission.",
+          "NSSpeechRecognitionUsageDescription": "The guest app is requesting for this permission.",
+          "NSUserTrackingUsageDescription": "The guest app is requesting for this permission."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "YTPlus",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/8XKHFLa.png",
+      "tintColor": "#fc0434",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "21.03.2",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/YouTubePlus.5.2b4_21.03.2.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "This lets you create videos using the app.",
+          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites.",
+          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
+          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
+          "NSAppleMusicUsageDescription": "This lets you add your own audio files to your videos.",
+          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
+          "NSLocationWhenInUseUsageDescription": "This enables local content discovery, improved recommendations, and enhanced search results.",
+          "NSContactsUsageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with.",
+          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Instagram",
+      "bundleIdentifier": "com.burbn.instagram",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/QP70lBE.jpeg",
+      "tintColor": "#ffd275",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "407.0.0",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Theta5.0Hotfix_407.0.0.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://facebook.com",
+          "NSBluetoothAlwaysUsageDescription": "This allows your phone to find and connect to the glasses using a Bluetooth connection.",
+          "NSFocusStatusUsageDescription": "This allows Instagram to check to see if you’ve been missing notifications from friends. You can always change this later in settings.",
+          "NSCameraUsageDescription": "Instagram uses your device's camera to do things like help you take photos, record videos and use effects.",
+          "NSUserTrackingUsageDescription": "This helps Instagram personalize ads we show you.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you save photos and videos to your Camera Roll.",
+          "NSLocationUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
+          "NSCalendarsUsageDescription": "This will let Instagram sync events to your calendar.",
+          "NSMicrophoneUsageDescription": "Instagram uses your device's microphone to do things like help you record videos and preview audio effects.",
+          "NSLocationWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "This will let Instagram sync events to your calendar.",
+          "NSFaceIDUsageDescription": "Enable Face ID for quick and secure authentication on Instagram.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
+          "NSContactsUsageDescription": "Instagram will use your contacts to suggest people and things you care about, and offer a better service. Your contacts will be periodically synced and securely stored on Instagram’s servers.",
+          "NSPhotoLibraryUsageDescription": "Instagram uses access to your camera roll to do things like help you share photos and videos to Instagram, apply effects and suggest photos and videos to share."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "RedditApp",
+      "bundleIdentifier": "com.reddit.Reddit",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/ut0vosB.png",
+      "tintColor": "#fc4404",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "2026.06.0",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/RedditDeluxe_v2026.06.0.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCalendarsUsageDescription": "Reddit needs access to your calendar to operate the community calendar widget.",
+          "NSCameraUsageDescription": "Use your camera to record videos. See our Privacy Policy for more information.",
+          "NSFaceIDUsageDescription": "Reddit needs access to Face ID to unlock your Vault.",
+          "NSMicrophoneUsageDescription": "Reddit needs access to your microphone to post videos with audio.",
+          "NSPhotoLibraryAddUsageDescription": "Reddit needs access to your photo library to post, save, and upload photos or videos.",
+          "NSPhotoLibraryUsageDescription": "Reddit needs access to your photo library to post, save, and upload photos or videos.",
+          "NSUserTrackingUsageDescription": "This allows Reddit to provide you with a better ads experience."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Twitter",
+      "bundleIdentifier": "com.atebits.Tweetie2",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/R36x019.png",
+      "tintColor": "#1c9cf4",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "11.35",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/NeoFreeBird-2.2-Twitter-11.35-noFixTwitterLogin.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://singular-bi.net",
+          "NSBluetoothAlwaysUsageDescription": "Twitter uses Bluetooth to discover Cast-enabled devices near you.",
+          "NSCameraUsageDescription": "Capture and post photos and videos from Twitter.",
+          "NSUserTrackingUsageDescription": "This helps Twitter show you more relevant ads.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you download photos and videos to your Photos.",
+          "NSLocalNetworkUsageDescription": "Twitter uses the local network to discover Cast-enabled devices on your WiFi network.",
+          "NSSpeechRecognitionUsageDescription": "Going forward, whenever you choose to share captions on this device, Apple will provide the service. Doing so helps make sure people of all hearing abilities can access your content.",
+          "NSLocationUsageDescription": "Enjoy Twitter tailored to your location.",
+          "NSCalendarsUsageDescription": "Add events to your calendar from Twitter.",
+          "NSMicrophoneUsageDescription": "Capture and post videos with sound from Twitter.",
+          "NSLocationWhenInUseUsageDescription": "Enjoy Twitter experience tailored to your location.",
+          "NSFaceIDUsageDescription": "Use FaceID to authenticate on Twitter.",
+          "NSContactsUsageDescription": "We will securely upload your contacts to our servers to help you connect with friends and suggest users to follow on X.",
+          "NSPhotoLibraryUsageDescription": "Allow access to share photos from your camera roll."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "WidgetSmith",
+      "bundleIdentifier": "com.crossforward.WidgetSmith",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/CVGzB6c.png",
+      "tintColor": "#3484ec",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "8.2",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Widgetsmith.v8.2.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAccentColorName": "AccentColor",
+          "NSAppleMusicUsageDescription": "You can create Music widgets which then play the associated music when tapped.",
+          "NSCalendarsFullAccessUsageDescription": "Your calendar events can be displayed in widgets.",
+          "NSCalendarsUsageDescription": "Your calendar events can be shown on widgets.",
+          "NSCameraUsageDescription": "The Mirror tool uses your selfie camera to provide you with a mirror view.",
+          "NSContactsUsageDescription": "Your contacts can be used in the Calendars when creating events.",
+          "NSHealthShareUsageDescription": "Your activity and health data can be shown on widgets.",
+          "NSHealthUpdateUsageDescription": "Your activity and health data can be shown on widgets.",
+          "NSLocationWhenInUseUsageDescription": "Your location is used to add favorite locations.",
+          "NSPhotoLibraryUsageDescription": "You can display your photos as widgets or make wallpapers.",
+          "NSRemindersFullAccessUsageDescription": "Your reminders can be shown on widgets.",
+          "NSRemindersUsageDescription": "Your reminders can be shown on a widget."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "StikDebug",
+      "bundleIdentifier": "com.stik.stikdebug",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/YsvHLfB.png",
+      "tintColor": "#24ccfc",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "3.0.1",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/StikDebug-3.0.1.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "StikDebug needs access to devices on your local network so it can connect to the targets you add to the Device Library.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "StikDebug uses location to stay running in the background and maintain your JIT connection.",
+          "NSLocationWhenInUseUsageDescription": "StikDebug uses location to stay running in the background and maintain your JIT connection."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "EnsWilde",
+      "bundleIdentifier": "com.yangjiii.EnsWilde",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/HkKr5M0.png",
+      "tintColor": "#c0683c",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "3.1.3",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/EnsWilde.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAccentColorName": "AccentColor"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "RespringApp",
+      "bundleIdentifier": "com.respring.app",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/4IQg2oj.png",
+      "tintColor": "#7f7f7f",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/respringapp.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Picsew",
+      "bundleIdentifier": "com.sugarmo.ScrollClip",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://fastly.mwm-storage.mwmcdn.com/raw_files/5dc7068b-04fc-4489-85d4-5eff9868a13a?height=640&format=webp",
+      "tintColor": "#d731be",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "3.16",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Picsew.3.16.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Video Capture",
+          "NSPhotoLibraryAddUsageDescription": "To stitch your images.",
+          "NSPhotoLibraryUsageDescription": "To stitch your images."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "nPlayer",
+      "bundleIdentifier": "com.newin.nplayer",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/RCJOOaL.png",
+      "tintColor": "#fcec14",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "3.13.0",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/nPlayer.Plus.3.13.0.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "nPlayer needs access to your Media Library to play audios and videos in the App.",
+          "NSBluetoothAlwaysUsageDescription": "nPlayer needs bluetooth access to be able to find bluetooth devices in the app.",
+          "NSBluetoothPeripheralUsageDescription": "nPlayer needs bluetooth access to be able to find bluetooth devices in the app.",
+          "NSFaceIDUsageDescription": "nPlayer needs access to your Face ID to identify the access permissions in the app.",
+          "NSLocalNetworkUsageDescription": "nPlayer uses the local network to discover Cast-enabled devices on your WiFi\nnetwork.",
+          "NSMicrophoneUsageDescription": "The app will access your microphone.",
+          "NSPhotoLibraryAddUsageDescription": "nPlayer needs access to your Photo Library to save photos in the App.",
+          "NSPhotoLibraryUsageDescription": "nPlayer needs access to your Photo Library to show photos in the App."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "iTorrent",
+      "bundleIdentifier": "com.xitrix.iTorrent2",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://user-images.githubusercontent.com/9553519/80646366-3d271680-8a75-11ea-8b60-9c5edd4ffd60.png",
+      "tintColor": "#00b39e",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "2.1.1",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/iTorrent_2.1.1.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAccentColorName": "AccentColor"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Asspp",
+      "bundleIdentifier": "wiki.qaq.Asspp",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/Qgg26jG.png",
+      "tintColor": "#3ca4fc",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "4.1.1",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Asspp.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAccentColorName": "AccentColor",
+          "NSLocalNetworkUsageDescription": "Asspp requires this permission to communicate with install service on your device."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "OldOS",
+      "bundleIdentifier": "com.zurac.OldOS",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://pbs.twimg.com/profile_images/1416783489106591746/DGy5_hww_400x400.jpg",
+      "tintColor": "#6b737c",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "2.0.7",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/OldOS.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "To view, play, and experience your music in OldOS, please enable access to your music library. ",
+          "NSCameraUsageDescription": "To take photos in OldOS, please enable access to your camera.",
+          "NSContactsUsageDescription": "To view and manage your contacts in OldOS, please enable access to your contacts list.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "To enable maps to work properly, and see your current wifi network in Settings, please enable access to your location. Then close and re-open the Maps app.",
+          "NSLocationAlwaysUsageDescription": "To enable maps to work properly, and see your current wifi network in Settings, please enable access to your location. Then close and re-open the Maps app.",
+          "NSLocationWhenInUseUsageDescription": "To enable maps to work properly, and see your current wifi network in Settings, please enable access to your location. Then close and re-open the Maps app.",
+          "NSMicrophoneUsageDescription": "To record your audio while filming a video in OldOS, please in enable microphone access.",
+          "NSPhotoLibraryAddUsageDescription": "To view, manage, and add photos to your photo library in OldOS, please enable access. Then close and re-open the Photos app.",
+          "NSPhotoLibraryUsageDescription": "To view, manage, and add photos to your photo library in OldOS, please enable access. Then close and re-open the Photos app."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Aidoku",
+      "bundleIdentifier": "app.aidoku.Aidoku",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/O6yX7wU.png",
+      "tintColor": "#fc2c54",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.8.2",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Aidoku.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAccentColorName": "AccentColor",
+          "NSFaceIDUsageDescription": "Aidoku needs FaceID permissions for user-defined settings",
+          "NSLocalNetworkUsageDescription": "Aidoku needs permission to connect to local Komga and Kavita servers",
+          "NSPhotoLibraryUsageDescription": "Aidoku needs permission to save pages in your photo library"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Litomi",
+      "bundleIdentifier": "in.litomi.app",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/yzHlDCg.png",
+      "tintColor": "#74d4e4",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/litomi-ios-altstore.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Tachimanga",
+      "bundleIdentifier": "com.mangacrush.ios",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/sYbyhMj.png",
+      "tintColor": "#046cbc",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "4.14",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Tachimanga.4.14.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSFaceIDUsageDescription": "Tachimanga needs FaceID permissions for user-defined settings",
+          "NSLocalNetworkUsageDescription": "Sync configs with nearby devices running the Tachimanga App.",
+          "NSPhotoLibraryUsageDescription": "Tachimanga needs permission to save pages in your photo library",
+          "NSUserTrackingUsageDescription": "This identifier will only be used to deliver personalized ads"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "EhPanda",
+      "bundleIdentifier": "app.ehpanda",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/yVwNWvt.png",
+      "tintColor": "#4e8d7f",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "2.8.0",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/EhPanda.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSFaceIDUsageDescription": "We need this permission to provide Face ID option while unlocking the App.",
+          "NSPhotoLibraryAddUsageDescription": "We need this permission to save images to your photo library."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Venera",
+      "bundleIdentifier": "com.github.wgh136.venera",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/jJ7UpcN.png",
+      "tintColor": "#2444f4",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.6.3",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/venera-ios-1.6.3+163.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSFaceIDUsageDescription": "Ensure that the operation is being performed by the user themselves.",
+          "NSPhotoLibraryUsageDescription": "Choose images"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Aloha",
+      "bundleIdentifier": "com.alohabrowser.alohabrowser",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/yUpA2Us.png",
+      "tintColor": "#07f7e3",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "8.2.1",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Aloha.8.2.1.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://adjust-skadnetwork.com",
+          "NSCameraUsageDescription": "Aloha needs permissions to be able to save media to Camera Roll",
+          "NSLocalNetworkUsageDescription": "Aloha Browser uses the local network to discover Cast-enabled devices on your Wi-Fi network",
+          "NSLocationWhenInUseUsageDescription": "Websites you visit may request your location.",
+          "NSPhotoLibraryAddUsageDescription": "Aloha needs permissions to be able to save media to Camera Roll"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "IB1",
+      "bundleIdentifier": "com.chairentertainment.birthright",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/y7TAXG9.png",
+      "tintColor": "#d83030",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.4.3",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Infinity.Blade.I.-.Community.Patch.v2.1.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
+    },
+    {
+      "name": "IB2",
+      "bundleIdentifier": "com.chairentertainment.IB2",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/Sv0ZKx4.png",
+      "tintColor": "#ce2929",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.3.5",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Infinity.Blade.II.-.Community.Patch.v2.1.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSUbiquitousDisplaySet": "com.chair.IB2_iCloudDisplay"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "IB3",
+      "bundleIdentifier": "com.chairentertainment.IB3",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/quDbVGy.png",
+      "tintColor": "#cd0b0b",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.4.4",
+          "date": "2026-04-06",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/v1.0/Infinity.Blade.III.-.Community.Patch.v2.2.-.Modded_NO.GOLD.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSUbiquitousDisplaySet": "com.chair.IB3_iCloudDisplay"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Plague Inc. ",
+      "bundleIdentifier": "com.ndemiccreations.plagueinc",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://play-lh.googleusercontent.com/qLgeusnY6S6JC_qB7s1qz5rPzrzMIuiXDvQN2R9qZhuQb3xTw4adMD0-Ktk12LrLwFB_wn_ftNVvLDsixSBeGQ",
+      "tintColor": "#c5063b",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.21",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Plague.Inc.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
+    },
+    {
+      "name": "BloonsTD6",
+      "bundleIdentifier": "com.ninjakiwi.bloonstd6",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/j88OeI7.png",
+      "tintColor": "#dc0404",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "53.2",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Bloons.TD.6.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "CloverPit",
+      "bundleIdentifier": "com.PanikArcade.CloverPit",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/kzhaesu.png",
+      "tintColor": "#80241c",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.3.8",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/CloverPit-1.3.8.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Delta",
+      "bundleIdentifier": "com.rileytestut.Delta",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/a7eQvKW.png",
+      "tintColor": "#8224ee",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.6",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Delta_1_6.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Delta uses the local network to communicate with AltServer and enable JIT.",
+          "NSMicrophoneUsageDescription": "Delta uses your microphone to emulate the Nintendo DS microphone.",
+          "NSPhotoLibraryUsageDescription": "Press \"OK\" to allow Delta to use images from your Photo Library as game artwork."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Entitlement",
+      "bundleIdentifier": "com.stos.Entitlement",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzDw2Cm5zMwwkJ3oYWkQkLjJVzYYeJ5PhKg&s9/1490437543932461296/ws9t71s8n2.png?ex=69d40da1&is=69d2bc21&hm=16a77efecb0b18301f5dce3c52f05050660791458d61f46054f45467f3a1387b",
+      "tintColor": "#007aff",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-04-06T00:00:00+09:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Entitlement.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
+    },
+    {
+      "name": "MeloNX",
+      "bundleIdentifier": "com.stossy11.MeloNX",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/3uGA9rf.png",
+      "tintColor": "#653db1",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "2.2",
+          "date": "2026-04-05T15:00:00+09:00",
+          "localizedDescription": "",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/MeloNX.2.2.ipa",
+          "size": 100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "MeloNX needs access to your Photo Library in order to save images"
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "YTMusicUltimate",
+      "bundleIdentifier": "com.google.ios.youtubemusic",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/WhDWTNC.png",
+      "tintColor": "#fc0434",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "9.13.3",
+          "date": "2026-04-05T21:30:00+09:00",
+          "localizedDescription": null,
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/YouTube.Music.Premium.YTMusicUltimate.ipa",
+          "size": 98900000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "YouTube Music uses Bluetooth to locate and connect to Chromecast and other devices.",
+          "NSBluetoothPeripheralUsageDescription": "YouTube Music uses Bluetooth to locate and connect to Chromecast and other devices.",
+          "NSCameraUsageDescription": "To take a profile picture, allow YouTube Music to access your camera.",
+          "NSContactsUsageDescription": "This will allow you to invite your family into your membership plan.",
+          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube Music to discover and connect to devices such as your TV.",
+          "NSMicrophoneUsageDescription": "This lets you include audio with your videos.",
+          "NSPhotoLibraryAddUsageDescription": "To save images, allow YouTube Music to access your photo library.",
+          "NSPhotoLibraryUsageDescription": "To choose a profile picture, allow YouTube Music to access your photos."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "KakaoTalk2",
+      "bundleIdentifier": "com.iwilab.KakaoTalk2",
+      "marketplaceID": "",
+      "developerName": "Example Developer",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/e6V756s.png",
+      "tintColor": "#fbe304",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "25.7.3",
+          "date": "2026-04-06T09:00:00+09:00",
+          "localizedDescription": null,
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/KakaoTalk2_v25.7.3.ipa",
+          "size": 218700000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSFaceIDUsageDescription": "You may not be able to use this feature if you don't allow access to Face ID.",
+          "NSContactsUsageDescription": "\n        Please tap “OK” below to allow KakaoTalk to access your contacts.\n        \n        If you do not allow access, the names of your KakaoTalk friends may be altered or may not be synced to your contacts.\n    ",
+          "NSSiriUsageDescription": "Would you like to allow Siri to read and write message in 1:1 chatrooms? Group chatrooms are available after additional settings.",
+          "NSPhotoLibraryUsageDescription": "\n        Please tap “OK” below to allow KakaoTalk to display albums and save photos.\n        \n        If you do not allow access, KakaoTalk cannot display your albums or save your photos.\n    ",
+          "NSSpeechRecognitionUsageDescription": "Above access permissions are required in KakaoTalk for analysis. If you don't allow them, you cannot use the feature.",
+          "NSCalendarsFullAccessUsageDescription": "KakaoTalk needs access to your Calendar in order to display and manage events.",
+          "NSUserTrackingUsageDescription": "Allow tracking and receive personalized, interest-based ads instead of irrelevant ads. Ads will still be displayed if you do not allow tracking.",
+          "NSVoIPUsageDescription": "",
+          "NSBluetoothAlwaysUsageDescription": "Please allow access to bluetooth in order to use the bluetooth-based services.",
+          "NSPhotoLibraryAddUsageDescription": "\n        Please tap “OK” below to allow KakaoTalk to save photos.\n        \n        If you do not allow access, KakaoTalk cannot save your photos.\n    ",
+          "NSCameraUsageDescription": "Enable camera access to use this feature.\n        If you don’t allow access, you may not be able to use Camera on KakaoTalk.",
+          "NSMicrophoneUsageDescription": "Enable microphone access to use this feature.\n        If you don't allow access, the feature may not work properly.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Please allow access to Location in order to use the location-based services.",
+          "NSLocationUsageDescription": "Please allow access to Location in order to use the location-based services.",
+          "NSAppleMusicUsageDescription": "Please tap “OK” below to allow KakaoTalk to display albums and save photos.\n        \n        If you do not allow access, KakaoTalk cannot display your albums or save your photos.",
+          "NSBluetoothPeripheralUsageDescription": "Please allow access to bluetooth in order to use the bluetooth-based services.",
+          "NSCalendarsUsageDescription": "KakaoTalk needs access to your Calendar in order to display and manage events.  ",
+          "NSLocationWhenInUseUsageDescription": "Please allow access to Location in order to use the location-based services."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Threads",
+      "bundleIdentifier": "com.burbn.barcelona",
+      "marketplaceID": "",
+      "developerName": "Example Developer",
+      "subtitle": "NightFox",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://i.imgur.com/I9y82CE.png",
+      "tintColor": "#7f7f7f",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "423.1.0",
+          "date": "2026-04-07",
+          "localizedDescription": "First AltStore release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.3/ThreadSaver-v423.1.0.ipa",
+          "size": 84436954,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://facebook.com",
+          "NSCameraUsageDescription": "Threads uses your camera to do things like help you take photos when posting.",
+          "NSContactsUsageDescription": "This helps you and others find your friends and more.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Select \"Always Allow\" to make some features work. You can change this anytime in Settings.",
+          "NSLocationAlwaysUsageDescription": "Select \"Always Allow\" to make some features work. You can change this anytime in Settings.",
+          "NSLocationUsageDescription": "Select ok to make some features work. You can change this anytime in Settings.",
+          "NSLocationWhenInUseUsageDescription": "Your location will be used to show places nearby, allowing you to tag a place on your post.",
+          "NSMicrophoneUsageDescription": "Threads uses your microphone to do things like help you record audio when posting.",
+          "NSMotionUsageDescription": "This makes some features work. You can always change this later in Settings.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you save photos and videos to your Camera Roll.",
+          "NSPhotoLibraryUsageDescription": "This lets you share photos from your library and save photos to your Camera Roll."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "Messenger ",
+      "bundleIdentifier": "com.facebook.Messenger",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/com.facebook.Messenger.png",
+      "tintColor": "#00b39e",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "555.0.0",
+          "date": "2026-04-07",
+          "localizedDescription": "First AltStore release!",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.2/Messenger.ipa",
+          "size": 77394904,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "name": "EeveeSpotify",
       "bundleIdentifier": "com.spotify.client",
-      "developerName": "NightFox",
+      "marketplaceID": "",
+      "developerName": "Example Developer",
       "subtitle": "NightFox",
-      "localizedDescription": "NightFox",
-      "iconURL": "https://i.imgur.com/EVyT7Ji.png",
-      "tintColor": "#1db954",
-      "category": "music",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://i.imgur.com/y7qxsmG.png",
+      "tintColor": "#04e154",
+      "category": "other",
       "screenshots": [],
-      "versions": [],
-      "appCapabilities": {
-        "entitlements": {
-          "get-task-allow": true,
-          "com.apple.developer.networking.multicast": true,
-          "com.apple.developer.networking.networkextension": [
-            "app-proxy-provider",
-            "content-filter-provider",
-            "packet-tunnel-provider"
-          ],
-          "com.apple.security.application-groups": [
-            "group.com.spotify.client"
-          ],
-          "com.apple.developer.icloud-container-identifiers": [
-            "iCloud.com.spotify.client"
-          ]
-        },
-        "infoPlist": {
-          "NSAppleMusicUsageDescription": "NightFox",
-          "NSBluetoothAlwaysUsageDescription": "NightFox",
-          "NSBluetoothPeripheralUsageDescription": "NightFox",
-          "NSCalendarsUsageDescription": "NightFox",
-          "NSFaceIDUsageDescription": "NightFox",
-          "NSHealthShareUsageDescription": "NightFox",
-          "NSHealthUpdateUsageDescription": "NightFox",
-          "NSLocalNetworkUsageDescription": "NightFox",
-          "NSLocationWhenInUseUsageDescription": "NightFox",
-          "NSMicrophoneUsageDescription": "NightFox",
-          "NSMotionUsageDescription": "NightFox",
-          "NSPhotoLibraryAddUsageDescription": "NightFox",
-          "NSPhotoLibraryUsageDescription": "NightFox",
-          "NSUserTrackingUsageDescription": "NightFox"
+      "versions": [
+        {
+          "version": "9.1.34",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.3.1/EeveeSpotify-9.1.34.ipa",
+          "size": 99039859
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "This will let you play your imported music on Spotify.",
+          "NSBluetoothAlwaysUsageDescription": "This lets you unlock new ways of interacting with other devices compatible with Spotify via Bluetooth.",
+          "NSCalendarsUsageDescription": "This lets Spotify view and add events to your calendar.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "This lets Spotify add events to your calendar.",
+          "NSCameraUsageDescription": "This lets you use your camera to scan or upload images.",
+          "NSContactsUsageDescription": "This lets Spotify access calendars you may have shared with your contacts.",
+          "NSFaceIDUsageDescription": "This lets you set access restrictions using Face ID.",
+          "NSHealthShareUsageDescription": "Spotify will use HealthKit data to provide personalised audio recommendations for your workouts.",
+          "NSHealthUpdateUsageDescription": "Spotify will use HealthKit data to provide personalised audio recommendations for your workouts.",
+          "NSLocalNetworkUsageDescription": "This lets you listen on different devices. Spotify will also get access to local audio files.",
+          "NSLocationWhenInUseUsageDescription": "Your location is used to improve your recommendations and experience on Spotify.",
+          "NSMicrophoneUsageDescription": "This lets you control Spotify using your voice.",
+          "NSMotionUsageDescription": "We will use this to understand which audio motivates you most.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you save images to your Photo Library.",
+          "NSPhotoLibraryUsageDescription": "This lets you select images from your Photo Library.",
+          "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads or content to you."
         }
       },
       "patreon": {},
