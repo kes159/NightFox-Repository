@@ -151,12 +151,9 @@
       "versions": [
         {
           "version": "407.0.0",
-          "date": "2026-04-06",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/v1.0/Theta5.0Hotfix_407.0.0.ipa",
-          "size": 79821,
-          "buildVersion": null,
-          "minOSVersion": null
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Theta5.0Hotfix_407.0.0.ipa",
+          "size": 247402773
         }
       ],
       "appPermissions": {
@@ -179,7 +176,9 @@
           "NSPhotoLibraryUsageDescription": "Instagram uses access to your camera roll to do things like help you share photos and videos to Instagram, apply effects and suggest photos and videos to share."
         }
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "407.0.0",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Theta5.0Hotfix_407.0.0.ipa"
     },
     {
       "name": "RedditApp",
@@ -315,12 +314,9 @@
       "versions": [
         {
           "version": "3.0.1",
-          "date": "2026-04-06",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/v1.0/StikDebug-3.0.1.ipa",
-          "size": 79821,
-          "buildVersion": null,
-          "minOSVersion": null
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//StikDebug-3.0.1.ipa",
+          "size": 10461243
         }
       ],
       "appPermissions": {
@@ -331,7 +327,9 @@
           "NSLocationWhenInUseUsageDescription": "StikDebug uses location to stay running in the background and maintain your JIT connection."
         }
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "3.0.1",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//StikDebug-3.0.1.ipa"
     },
     {
       "name": "EnsWilde",
@@ -377,19 +375,18 @@
       "versions": [
         {
           "version": "1.0",
-          "date": "2026-04-06",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/v1.0/respringapp.ipa",
-          "size": 79821,
-          "buildVersion": null,
-          "minOSVersion": null
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//respringapp.ipa",
+          "size": 264632
         }
       ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "1.0",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//respringapp.ipa"
     },
     {
       "name": "Picsew",
@@ -763,19 +760,18 @@
       "versions": [
         {
           "version": "1.4.3",
-          "date": "2026-04-06",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/v1.0/Infinity.Blade.I.-.Community.Patch.v2.1.ipa",
-          "size": 79821,
-          "buildVersion": null,
-          "minOSVersion": null
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Infinity.Blade.I.-.Community.Patch.v2.1.ipa",
+          "size": 636867181
         }
       ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "1.4.3",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Infinity.Blade.I.-.Community.Patch.v2.1.ipa"
     },
     {
       "name": "Infinity Blade II",
@@ -791,19 +787,18 @@
       "versions": [
         {
           "version": "1.3.5",
-          "date": "2026-04-06",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/v1.0/Infinity.Blade.II.-.Community.Patch.v2.1.ipa",
-          "size": 79821,
-          "buildVersion": null,
-          "minOSVersion": null
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Infinity.Blade.II.-.Community.Patch.v2.1.ipa",
+          "size": 1101930349
         }
       ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "1.3.5",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Infinity.Blade.II.-.Community.Patch.v2.1.ipa"
     },
     {
       "name": "Infinity Blade III",
@@ -819,28 +814,18 @@
       "versions": [
         {
           "version": "1.4.4",
-          "date": "2026-04-06",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/v1.0/Infinity.Blade.III.-.Community.Patch.v2.2.ipa",
-          "size": 79821,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "1.4.4",
-          "date": "2026-04-06",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/v1.0/Infinity.Blade.III.-.Community.Patch.v2.2.-.Modded_NO.GOLD.ipa",
-          "size": 79821,
-          "buildVersion": null,
-          "minOSVersion": null
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Infinity.Blade.III.-.Community.Patch.v2.2.-.Modded_NO.GOLD.ipa",
+          "size": 1884353450
         }
       ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "1.4.4",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Infinity.Blade.III.-.Community.Patch.v2.2.-.Modded_NO.GOLD.ipa"
     },
     {
       "name": "Plague Inc. ",
@@ -1006,19 +991,18 @@
       "versions": [
         {
           "version": "1.0",
-          "date": "2026-04-06",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/v1.0/Entitlement.ipa",
-          "size": 79821,
-          "buildVersion": null,
-          "minOSVersion": null
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Entitlement.ipa",
+          "size": 2613093
         }
       ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "1.0",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Entitlement.ipa"
     },
     {
       "name": "MeloNX",
@@ -1034,12 +1018,9 @@
       "versions": [
         {
           "version": "2.2",
-          "date": "2026-04-06",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/v1.0/MeloNX.2.2.ipa",
-          "size": 79821,
-          "buildVersion": null,
-          "minOSVersion": null
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//MeloNX.2.2.ipa",
+          "size": 64919190
         },
         {
           "version": "2.3",
@@ -1066,7 +1047,9 @@
           "NSPhotoLibraryAddUsageDescription": "MeloNX needs access to your Photo Library in order to save images"
         }
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "2.2",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//MeloNX.2.2.ipa"
     },
     {
       "name": "YTMusicUltimate",
@@ -1151,6 +1134,330 @@
         }
       },
       "patreon": {}
+    },
+    {
+      "name": "ReactNativeBlobUtilPrivacyInfo",
+      "bundleIdentifier": "org.cocoapods.ReactNativeBlobUtilPrivacyInfo",
+      "developerName": "NightFox",
+      "version": "0.21.2",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//HD.Flix_.2.0_1775501478.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/org.cocoapods.ReactNativeBlobUtilPrivacyInfo.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "0.21.2",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//HD.Flix_.2.0_1775501478.ipa",
+          "size": 42319121
+        }
+      ]
+    },
+    {
+      "name": "Grok_Grok",
+      "bundleIdentifier": "grok.Grok.resources",
+      "developerName": "NightFox",
+      "version": "1.0.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//NeoFreeBird-2.2-Twitter-11.35-noFixTwitterLogin.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/grok.Grok.resources.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//NeoFreeBird-2.2-Twitter-11.35-noFixTwitterLogin.ipa",
+          "size": 158452402
+        }
+      ]
+    },
+    {
+      "name": "Unknown App",
+      "bundleIdentifier": "com.ps.returnyoutubemusicdislikes",
+      "developerName": "NightFox",
+      "version": "1.0.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//YouTube.Music.Premium.YTMusicUltimate.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/com.ps.returnyoutubemusicdislikes.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//YouTube.Music.Premium.YTMusicUltimate.ipa",
+          "size": 98897036
+        }
+      ]
+    },
+    {
+      "name": "Unknown App",
+      "bundleIdentifier": null,
+      "developerName": "NightFox",
+      "version": "1.0.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//YouTubePlus.5.2b4_21.03.2.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/None.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//YouTubePlus.5.2b4_21.03.2.ipa",
+          "size": 125279672
+        }
+      ]
+    },
+    {
+      "name": "SWCompression_SWCompression",
+      "bundleIdentifier": "swcompression.SWCompression.resources",
+      "developerName": "NightFox",
+      "version": "1.0.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Feather.2.6.0.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/swcompression.SWCompression.resources.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Feather.2.6.0.ipa",
+          "size": 14282748
+        }
+      ]
+    },
+    {
+      "name": "Unknown App",
+      "bundleIdentifier": "com.dvntm.infuseplus",
+      "developerName": "NightFox",
+      "version": "1.0.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Infuse.Plus.v8.4.1.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/com.dvntm.infuseplus.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Infuse.Plus.v8.4.1.ipa",
+          "size": 83506392
+        }
+      ]
+    },
+    {
+      "name": "OpenInYT Extension",
+      "bundleIdentifier": "com.relax.OpenInYT.Extension",
+      "developerName": "NightFox",
+      "version": "1.8",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//OpenInYT.IPA.v1.8.Unlocked.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/com.relax.OpenInYT.Extension.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.8",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//OpenInYT.IPA.v1.8.Unlocked.ipa",
+          "size": 1687188
+        }
+      ]
+    },
+    {
+      "name": "GoogleMobileAdsResources",
+      "bundleIdentifier": "org.cocoapods.GoogleMobileAdsResources",
+      "developerName": "NightFox",
+      "version": "11.13.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Tachimanga.4.14.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/org.cocoapods.GoogleMobileAdsResources.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "11.13.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Tachimanga.4.14.ipa",
+          "size": 126595942
+        }
+      ]
+    },
+    {
+      "name": "swift-composable-architecture_ComposableArchitecture",
+      "bundleIdentifier": "swift-composable-architecture.ComposableArchitecture.resources",
+      "developerName": "NightFox",
+      "version": "1.0.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//EhPanda.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/swift-composable-architecture.ComposableArchitecture.resources.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//EhPanda.ipa",
+          "size": 7224545
+        }
+      ]
+    },
+    {
+      "name": "ZIPFoundation_ZIPFoundation",
+      "bundleIdentifier": "zipfoundation.ZIPFoundation.resources",
+      "developerName": "NightFox",
+      "version": "1.0.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Aidoku.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/zipfoundation.ZIPFoundation.resources.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Aidoku.ipa",
+          "size": 9119989
+        }
+      ]
+    },
+    {
+      "name": "LaunchAppExtensionHelper",
+      "bundleIdentifier": "com.kdt.livecontainer.LaunchAppExtensionHelper",
+      "developerName": "NightFox",
+      "version": "1.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//LiveContainer+SideStore.3.7.2.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/com.kdt.livecontainer.LaunchAppExtensionHelper.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//LiveContainer+SideStore.3.7.2.ipa",
+          "size": 34811049
+        }
+      ]
+    },
+    {
+      "name": "NudgeToCrosspost_ExperimentsBundle.bundle",
+      "bundleIdentifier": "com.bazel.apple_precompiled_resource_bundle_NudgeToCrosspost_ExperimentsBundle",
+      "developerName": "NightFox",
+      "version": "1.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//RedditDeluxe_v2026.06.0.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/com.bazel.apple_precompiled_resource_bundle_NudgeToCrosspost_ExperimentsBundle.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//RedditDeluxe_v2026.06.0.ipa",
+          "size": 159637491
+        }
+      ]
+    },
+    {
+      "name": "Firebase_FirebaseCore",
+      "bundleIdentifier": "FirebaseCore.resources",
+      "developerName": "NightFox",
+      "version": "1.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//KakaoTalk2_v25.7.3.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/FirebaseCore.resources.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//KakaoTalk2_v25.7.3.ipa",
+          "size": 218714221
+        }
+      ]
+    },
+    {
+      "name": "AppsFlyerLib_Privacy",
+      "bundleIdentifier": "org.cocoapods.AppsFlyerLib-Privacy",
+      "developerName": "NightFox",
+      "version": "6.16.2",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Bloons.TD.6.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/org.cocoapods.AppsFlyerLib-Privacy.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "6.16.2",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Bloons.TD.6.ipa",
+          "size": 72995132
+        }
+      ]
+    },
+    {
+      "name": "swift-crypto_CCryptoBoringSSLShims",
+      "bundleIdentifier": "swift-crypto.CCryptoBoringSSLShims.resources",
+      "developerName": "NightFox",
+      "version": "1.0.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Asspp.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/swift-crypto.CCryptoBoringSSLShims.resources.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Asspp.ipa",
+          "size": 13586686
+        }
+      ]
+    },
+    {
+      "name": "vorbis",
+      "bundleIdentifier": "org.xiph.vorbis",
+      "developerName": "NightFox",
+      "version": "1.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Widgetsmith.v8.2.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/org.xiph.vorbis.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Widgetsmith.v8.2.ipa",
+          "size": 172886743
+        }
+      ]
+    },
+    {
+      "name": "Firebase_FirebaseCore",
+      "bundleIdentifier": "firebase-ios-sdk.FirebaseCore.resources",
+      "developerName": "NightFox",
+      "version": "1.0.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Picsew.3.16.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/firebase-ios-sdk.FirebaseCore.resources.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Picsew.3.16.ipa",
+          "size": 38237219
+        }
+      ]
+    },
+    {
+      "name": "GBCDeltaCore",
+      "bundleIdentifier": "org.cocoapods.GBCDeltaCore",
+      "developerName": "NightFox",
+      "version": "0.1.0",
+      "versionDate": "2026-04-07",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Delta_1_6.ipa",
+      "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/org.cocoapods.GBCDeltaCore.png",
+      "tintColor": "#00b39e",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "date": "2026-04-07",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download//Delta_1_6.ipa",
+          "size": 87734964
+        }
+      ]
     }
   ],
   "news": []
