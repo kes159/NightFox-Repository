@@ -1141,6 +1141,33 @@
         }
       },
       "patreon": {}
+    },
+    {
+      "name": "Infuse",
+      "bundleIdentifier": "com.firecore.infuse",
+      "marketplaceID": "",
+      "developerName": "Example Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://i.imgur.com/hvsToc2.png",
+      "tintColor": "#fc6c04",
+      "category": "other",
+      "screenshots": [],
+      "versions": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "Please allow access in order to show iTunes videos.",
+          "NSBluetoothAlwaysUsageDescription": "Used to discover nearby Cast devices",
+          "NSBluetoothPeripheralUsageDescription": "Used for streaming media to external devices",
+          "NSCameraUsageDescription": "Used for scanning QR codes",
+          "NSFaceIDUsageDescription": "Used for unlocking your device when restrictions are enabled",
+          "NSLocalNetworkUsageDescription": "Used to discover network shares and Google Cast devices in your local network",
+          "NSMicrophoneUsageDescription": "Used for pairing with external devices",
+          "NSPhotoLibraryAddUsageDescription": "Used for saving QR code"
+        }
+      },
+      "patreon": {}
     }
   ],
   "news": []
