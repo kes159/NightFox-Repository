@@ -4,9 +4,7 @@ import zipfile
 import plistlib
 from datetime import datetime
 
-# --- 사용자 설정 ---
 JSON_FILE = "NightFox Repository.json"
-IPA_FILE = "app.ipa" # GitHub Action이 내려받을 임시 이름
 
 def extract_ipa_info(ipa_path):
     try:
@@ -21,65 +19,66 @@ def extract_ipa_info(ipa_path):
                     "size": os.path.getsize(ipa_path)
                 }
     except Exception as e:
-        print(f"IPA 파싱 에러: {e}")
+        print(f"Error parsing {ipa_path}: {e}")
         return None
 
 def main():
-    download_url = os.getenv("DOWNLOAD_URL")
-    if not download_url:
-        print("다운로드 URL을 찾을 수 없습니다.")
+    # 현재 폴더에 있는 모든 .ipa 파일 목록 가져오기
+    ipa_files = [f for f in os.listdir('.') if f.endswith('.ipa')]
+    if not ipa_files:
+        print("처리할 IPA 파일이 없습니다.")
         return
 
-    info = extract_ipa_info(IPA_FILE)
-    if not info: return
-
-    # 1. 기존 JSON 읽기
+    # 기존 JSON 읽기
     if os.path.exists(JSON_FILE):
         with open(JSON_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
     else:
-        # 파일이 없으면 기본 구조 생성
         data = {"name": "NightFox Repository", "identifier": "com.nightfox.repository", "apps": []}
 
-    new_version_entry = {
-        "version": info['version'],
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "downloadURL": download_url,
-        "size": info['size']
-    }
+    for ipa_file in ipa_files:
+        info = extract_ipa_info(ipa_file)
+        if not info: continue
 
-    # 2. 동일한 앱이 있는지 확인 (Bundle ID 기준)
-    app_entry = next((item for item in data['apps'] if item["bundleIdentifier"] == info['bundleID']), None)
+        # 릴리스 자산 이름을 기반으로 다운로드 URL 추측 (GitHub 규칙 반영)
+        # 실제 URL은 main.yml에서 환경변수로 넘겨주는 것이 정확하지만, 
+        # 여러 파일 처리 시에는 파일명을 활용합니다.
+        repo_url = os.getenv("REPO_URL") # https://github.com/사용자/저장소
+        tag = os.getenv("TAG_NAME")
+        download_url = f"{repo_url}/releases/download/{tag}/{ipa_file}"
 
-    if app_entry:
-        # 기존 앱 업데이트
-        app_entry["version"] = info['version']
-        app_entry["versionDate"] = new_version_entry["date"]
-        app_entry["downloadURL"] = download_url
-        if "versions" not in app_entry: app_entry["versions"] = []
-        # 중복 버전 제거 후 최상단 추가
-        app_entry["versions"] = [v for v in app_entry["versions"] if v['version'] != info['version']]
-        app_entry["versions"].insert(0, new_version_entry)
-    else:
-        # 신규 앱 추가
-        data['apps'].append({
-            "name": info['name'],
-            "bundleIdentifier": info['bundleID'],
-            "developerName": "NightFox",
+        new_version = {
             "version": info['version'],
-            "versionDate": new_version_entry["date"],
+            "date": datetime.now().strftime("%Y-%m-%d"),
             "downloadURL": download_url,
-            "localizedDescription": "Added via NightFox Automation",
-            "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/default.png",
-            "tintColor": "#00b39e",
-            "versions": [new_version_entry]
-        })
+            "size": info['size']
+        }
 
-    # 3. 결과 저장
+        app_entry = next((item for item in data['apps'] if item["bundleIdentifier"] == info['bundleID']), None)
+
+        if app_entry:
+            app_entry["version"] = info['version']
+            if "versions" not in app_entry: app_entry["versions"] = []
+            app_entry["versions"] = [v for v in app_entry["versions"] if v['version'] != info['version']]
+            app_entry["versions"].insert(0, new_version)
+            app_entry["downloadURL"] = download_url
+        else:
+            data['apps'].append({
+                "name": info['name'],
+                "bundleIdentifier": info['bundleID'],
+                "developerName": "NightFox",
+                "version": info['version'],
+                "versionDate": new_version["date"],
+                "downloadURL": download_url,
+                "localizedDescription": "Added via NightFox Automation",
+                "iconURL": "https://raw.githubusercontent.com/kes159/NightFox-Repository/main/icons/default.png",
+                "tintColor": "#00b39e",
+                "versions": [new_version]
+            })
+        print(f"처리 완료: {info['name']}")
+
     with open(JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
-    
-    print(f"✅ 업데이트 완료: {info['name']} ({info['version']})")
 
 if __name__ == "__main__":
     main()
