@@ -10,7 +10,7 @@ JSON_FILE = "NightFox Repository.json"
 ICON_DIR = "icons"
 
 def extract_ipa_info_only(ipa_path):
-    """IPA 파일에서 메인 앱의 정보만 추출합니다."""
+    """IPA 파일에서 메인 앱의 정보를 추출합니다."""
     try:
         with zipfile.ZipFile(ipa_path, 'r') as z:
             plist_candidates = [f for f in z.namelist() if f.count('/') == 2 and f.endswith('Info.plist') and 'Payload/' in f]
@@ -83,16 +83,16 @@ def main():
         new_v = {"version": info['version'], "date": datetime.now().strftime("%Y-%m-%d"), "downloadURL": download_url, "size": info['size']}
 
         if app_entry:
-            # 기존 앱 업데이트
+            # 기존 앱 정보 업데이트 (순서 유지)
             app_entry["version"] = info['version']
             app_entry["iconURL"] = current_icon_url
             app_entry["downloadURL"] = download_url
             if "versions" not in app_entry: app_entry["versions"] = []
             app_entry["versions"] = [v for v in app_entry["versions"] if v['version'] != info['version']]
             app_entry["versions"].insert(0, new_v)
-            print(f"ℹ️ {info['name']}: 기존 정보 갱신")
+            print(f"ℹ️ {info['name']}: 기존 정보 업데이트")
         else:
-            # [수정 핵심] 변수를 먼저 완벽히 정의한 후 append 합니다.
+            # [해결포인트] 신규 앱 데이터를 변수에 먼저 정의한 후 append 합니다.
             new_app_data = {
                 "name": info['name'],
                 "bundleIdentifier": info['bundleID'],
@@ -105,7 +105,7 @@ def main():
                 "versions": [new_v]
             }
             data['apps'].append(new_app_data)
-            print(f"✅ {info['name']}: 목록 끝에 추가 완료")
+            print(f"✅ {info['name']}: 목록 맨 아래에 추가 완료")
 
     with open(JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
