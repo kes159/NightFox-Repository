@@ -1,8 +1,9 @@
 name: Update SideStore Source
 on:
-  release:
-    types: [published]
-  workflow_dispatch: # 수동 실행 버튼 추가
+  push:
+    paths:
+      - 'NightFox Repository.json' # 이 파일이 업로드될 때마다 실행
+  workflow_dispatch: # 직접 버튼 눌러서 실행하는 기능 유지
 
 jobs:
   update:
@@ -42,7 +43,14 @@ jobs:
         run: python update_source.py
 
       - name: Commit and Push
-        run: |
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        # [skip ci]를 넣으면 액션이 본인이 커밋한 거에는 다시 반응하지 않습니다.
+        git commit -m "Update SideStore Source [skip ci]" || echo "No changes to commit"
+        git push
+        
           # 1. 사용자 설정
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
