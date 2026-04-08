@@ -109,45 +109,60 @@ for app in base_data.get("apps", []):
             if app.get("version") == v.get("version") and app.get("version") is not None:
                 app["downloadURL"] = actual_url
 
-# D. 로컬 IPA 파일 처리
+# D. 로컬 IPA 파일 처리 (대표 정보 업데이트 + 버전별 개별 링크 유지)
 ipa_files = [f for f in os.listdir('.') if f.lower().endswith('.ipa')]
+
+# 파일들을 이름순으로 정렬하여 처리 (일관성 유지)
+ipa_files.sort()
 
 for ipa_file in ipa_files:
     info = extract_ipa_info_only(ipa_file)
     if not info: 
-        print(f"⚠️ {ipa_file}에서 정보를 추출할 수 없어 건너뜁니다.")
+        print(f"⚠️ {ipa_file}에서 정보를 추출할 수 없어 건너뜜")
         continue
 
-    download_url = all_release_assets.get(ipa_file)
-    if not download_url:
-        download_url = f"{REPO_URL}/releases/download/1.0/{ipa_file.replace(' ', '%20')}"
+    current_version = info.get('version', '1.0')
+    current_bundle_id = info.get('bundleID')
+    # 릴리즈에서 자산 링크 확인, 없으면 1.4.3 태그 기본값 사용
+    download_url = all_release_assets.get(ipa_file) or f"{REPO_URL}/releases/download/1.4.3/{ipa_file.replace(' ', '%20')}"
 
+    # 1. 번들 ID가 정확히 일치하는 앱 항목 찾기
+    app_entry = next((a for a in base_data['apps'] if a.get('bundleIdentifier') == current_bundle_id), None)
+
+    # 2. 이번 IPA 전용 '버전 객체' 생성 (이 객체 안에 해당 버전의 링크를 고정)
     new_v = {
-        "version": info.get('version', '1.0'), # 안전하게 get 사용
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "localizedDescription": "NightFox", 
-        "downloadURL": download_url,
+        "version": current_version,
+        "date": datetime.now().strftime("%Y-%m-%dT%H:%M:%S+09:00"),
+        "localizedDescription": f"NightFox Build - {current_version}", 
+        "downloadURL": download_url, # 해당 버전만의 고유 링크
         "size": info.get('size', 0),
-        "buildVersion": None,
-        "minOSVersion": None
+        "buildVersion": info.get('buildVersion', None),
+        "minOSVersion": info.get('minOSVersion', None)
     }
 
-    app_entry = next((a for a in base_data['apps'] if a.get('bundleIdentifier') == info.get('bundleID')), None)
-
     if app_entry:
-        app_entry["version"] = info.get('version', app_entry.get("version"))
+        # [정당화] 앱의 대표 정보(겉모습)는 현재 처리 중인 최신 파일로 갱신 [cite: 2026-03-31]
+        app_entry["version"] = current_version
         app_entry["downloadURL"] = download_url
         apply_nightfox_branding(app_entry)
-        if "versions" not in app_entry: app_entry["versions"] = []
-        app_entry["versions"] = [v for v in app_entry["versions"] if v.get('version') != info.get('version')]
+        
+        if "versions" not in app_entry: 
+            app_entry["versions"] = []
+        
+        # [정당화] '현재 버전'과 같은 항목만 리스트에서 삭제 후 새 객체 삽입
+        # 이 필터링 덕분에 다른 버전(예: 21.03.2)의 링크는 삭제되지 않고 보존됩니다. [cite: 2026-03-31]
+        app_entry["versions"] = [v for v in app_entry["versions"] if v.get('version') != current_version]
         app_entry["versions"].insert(0, new_v)
+        # 날짜순 정렬 (선택 사항: 최신 버전이 위로 오게 함)
+        app_entry["versions"].sort(key=lambda x: x.get('version', ''), reverse=True)
     else:
+        # 신규 앱 등록 (최초 등록 시)
         new_app = {
             "name": info.get('name', ipa_file),
-            "bundleIdentifier": info.get('bundleID', 'com.unknown'),
-            "version": info.get('version', '1.0'),
+            "bundleIdentifier": current_bundle_id,
+            "version": current_version,
             "downloadURL": download_url,
-            "iconURL": "https://i.imgur.com/nAsnPKq.png",
+            "iconURL": "https://i.imgur.com/nAsnPKq.png", # 기본 아이콘
             "tintColor": "#00b39e",
             "category": "other",
             "screenshots": [],
@@ -155,6 +170,8 @@ for ipa_file in ipa_files:
         }
         apply_nightfox_branding(new_app)
         base_data['apps'].append(new_app)
+
+print("✅ 버전별 링크 격리 및 대표 정보 업데이트 완료")
 
 # --- 5. 최종 결과 저장 ---
 with open(JSON_FILE, 'w', encoding='utf-8') as f:
