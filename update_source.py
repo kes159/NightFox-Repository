@@ -86,31 +86,37 @@ base_data = {
 }
 
 
-# --- 4. 기존 데이터 로드 및 강제 업데이트 ---
-# A. 기존 JSON 데이터 불러오기
+# --- 4. 기존 데이터 로드 및 필수 필드 강제 보정 ---
 if os.path.exists(JSON_FILE):
     with open(JSON_FILE, 'r', encoding='utf-8') as f:
-        loaded_data = json.load(f)
-        
-        # 1. 앱 리스트만 가져오기
-        base_data['apps'] = loaded_data.get('apps', [])
-        
-        # 2. 상단 정보(식별자 등)는 코드에 적힌 것으로 '강제 업데이트'
-        # 이렇게 해야 JSON 파일에 identifier가 확실히 박힙니다.
-        base_data.update({
-            "name": "NightFox Repository",
-            "identifier": "com.nightfox.repo",
-            "subtitle": "NightFox's App Repository",
-            "description": "Welcome to NightFox's source!",
-            "iconURL": "https://i.imgur.com/EVyT7Ji.png"
-        })
+        try:
+            loaded_data = json.load(f)
+            
+            # 1. 기존 앱 리스트 가져오기
+            base_data['apps'] = loaded_data.get('apps', [])
+            
+            # 2. [중요] AltStudio 등 외부 도구에서 누락시킨 필수 필드 강제 보정
+            # base_data(코드 상단 설정)에 있는 값을 우선적으로 loaded_data에 주입합니다.
+            required_fields = [
+                'name', 'identifier', 'subtitle', 'description', 
+                'iconURL', 'website', 'patreonURL', 'tintColor'
+            ]
+            for field in required_fields:
+                if field in base_data:
+                    loaded_data[field] = base_data[field]
 
-        # 3. 뉴스 데이터의 null 값 방지
-        if 'news' in loaded_data:
-            for item in loaded_data['news']:
-                if item.get('appID') is None:
-                    item['appID'] = "" # null 대신 빈 문자열로 정화
-            base_data['news'] = loaded_data['news']
+            # 3. 뉴스 데이터 처리 및 null 값(Feather 오류 원인) 방지
+            if 'news' in loaded_data:
+                for item in loaded_data['news']:
+                    if item.get('appID') is None:
+                        item['appID'] = "" # null을 빈 문자열로 정화
+                base_data['news'] = loaded_data['news']
+            
+            # 4. 보정된 모든 내용을 base_data에 최종 반영
+            base_data.update(loaded_data)
+            
+        except Exception as e:
+            print(f"기존 JSON 읽기 또는 보정 중 오류 발생: {e}")
             
 # B. 모든 릴리즈에서 실제 IPA 다운로드 주소 수집
 all_release_assets = {}
