@@ -17,12 +17,26 @@ repo = g.get_repo(REPO_NAME)
 
 # --- 2. 필수 함수 (기존 로직 유지 필요) ---
 def extract_ipa_info_only(ipa_path):
-    """
-    IPA 파일에서 이름, 버전, 번들ID, 크기를 추출합니다.
-    (NightFox님의 기존 로직이 여기에 들어있어야 합니다.)
-    """
-    # 실제 구현이 없으면 스크립트가 작동하지 않으므로 주의하세요.
-    pass 
+    """IPA 파일 내부의 Info.plist를 분석하여 실제 정보를 추출합니다."""
+    try:
+        import zipfile
+        import plistlib
+        import os
+
+        with zipfile.ZipFile(ipa_path, 'r') as z:
+            # Payload/*.app/Info.plist 경로 찾기
+            plist_path = next(f for f in z.namelist() if f.startswith('Payload/') and f.endswith('.app/Info.plist'))
+            with z.open(plist_path) as f:
+                plist = plistlib.load(f)
+                return {
+                    'name': plist.get('CFBundleDisplayName') or plist.get('CFBundleName') or ipa_path,
+                    'version': plist.get('CFBundleShortVersionString') or "1.0",
+                    'bundleID': plist.get('CFBundleIdentifier'),
+                    'size': os.path.getsize(ipa_path)
+                }
+    except Exception as e:
+        print(f"⚠️ {ipa_path} 정보 추출 실패: {e}")
+        return None
 
 def apply_nightfox_branding(entry):
     """앱 항목에 NightFox 브랜딩을 적용합니다."""
