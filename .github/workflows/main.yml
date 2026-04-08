@@ -46,24 +46,22 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # 파일명에 공백이 있으므로 따옴표 처리 필수
-          git add "NightFox_Repository.json" || git add "NightFox Repository.json"
+          # 파일명 공백 문제 방지를 위해 와일드카드나 정확한 이름 사용
+          git add "NightFox*.json"
+          if [ -d "icons" ]; then git add icons/*.png; fi
           
-          if [ -d "icons" ]; then
-            git add icons/*.png
-          fi
-          
-          # 변경 사항이 있을 때만 실행
           if ! git diff --cached --quiet; then
             git commit -m "chore: update repository source and icons [skip ci]"
             
-            # 인증 정보 재설정
+            # 원격 주소 재설정
             git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
             
-            # [핵심 수정] 푸시 전 원격의 변경사항을 가져와 내 커밋을 그 위에 재배치(충돌 방지)
+            # 방법 1: rebase 시도 (안전함)
             git pull --rebase origin main
             
-            git push origin HEAD:main
+            # 방법 2: 그래도 실패하면 강제로 밀어넣기 (확실함)
+            # origin HEAD:main은 현재 상태를 main 브랜치에 강제로 덮어씌웁니다.
+            git push origin HEAD:main --force
           else
             echo "No changes to commit"
           fi
