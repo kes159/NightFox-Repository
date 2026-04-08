@@ -1298,6 +1298,30 @@
       "developerName": "NightFox",
       "subtitle": "NightFox",
       "localizedDescription": "NightFox"
+    },
+    {
+      "name": "File Converter",
+      "bundleIdentifier": "com.icecoldapps.fileconverter",
+      "version": "12.1.14",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.5/File.Converter.ipa",
+      "iconURL": "https://i.imgur.com/nAsnPKq.png",
+      "tintColor": "#00b39e",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "12.1.14",
+          "date": "2026-04-08T18:18:27+09:00",
+          "localizedDescription": "NightFox Build - 12.1.14",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.5/File.Converter.ipa",
+          "size": 35377688,
+          "buildVersion": "2064",
+          "minOSVersion": null
+        }
+      ],
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox"
     }
   ]
 }
