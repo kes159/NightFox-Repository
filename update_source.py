@@ -19,10 +19,9 @@ repo = g.get_repo(REPO_NAME)
 def extract_ipa_info_only(ipa_path):
     """
     IPA 파일에서 이름, 버전, 번들ID, 크기를 추출합니다.
-    기존에 사용하시던 로직을 여기에 그대로 붙여넣으세요.
+    (NightFox님의 기존 로직이 여기에 들어있어야 합니다.)
     """
-    # [NightFox님의 기존 extract_ipa_info_only 로직을 여기에 복사하세요]
-    # 예시 구조: return {'name': ..., 'version': ..., 'bundleID': ..., 'size': ...}
+    # 실제 구현이 없으면 스크립트가 작동하지 않으므로 주의하세요.
     pass 
 
 def apply_nightfox_branding(entry):
@@ -71,67 +70,73 @@ print("GitHub 모든 릴리즈에서 최신 다운로드 링크를 검색 중...
 for release in repo.get_releases():
     for asset in release.get_assets():
         if asset.name.lower().endswith('.ipa'):
-            # 파일 이름을 키로 하여 가장 최신 릴리즈의 주소를 저장
             if asset.name not in all_release_assets:
                 all_release_assets[asset.name] = asset.browser_download_url
                 print(f"찾음: {asset.name} (태그: {release.tag_name})")
 
-# C. 기존 JSON에 적힌 앱들의 링크 업데이트 (재점검 기능)
+# C. 기존 JSON에 적힌 앱들의 링크 업데이트 (재점검 및 방어 로직 강화)
 print("기존 JSON 앱 데이터의 링크를 검증 및 업데이트 중...")
 for app in base_data.get("apps", []):
-    if "versions" in app:
-        for v in app["versions"]:
-            # URL에서 파일명을 추출하여 현재 릴리즈 에셋과 매칭
-            file_name_in_url = v["downloadURL"].split('/')[-1].replace('%20', ' ')
-            actual_url = all_release_assets.get(file_name_in_url)
-            
-            if actual_url and v["downloadURL"] != actual_url:
-                print(f"링크 갱신: {app['name']} ({v['version']})")
-                v["downloadURL"] = actual_url
-                # 현재 메인 버전 링크도 함께 갱신
-                if app["version"] == v["version"]:
-                    app["downloadURL"] = actual_url
+    # [꼼꼼한 수정 1] 필수 키가 없는 앱 항목은 건너뛰기
+    if "versions" not in app or "name" not in app:
+        print(f"⚠️ 경고: '{app.get('name', '알 수 없는 앱')}' 항목의 구조가 올바르지 않아 건너뜁니다.")
+        continue
 
-# D. 로컬 IPA 파일 처리 (새로 추가되거나 업데이트된 파일)
+    for v in app["versions"]:
+        # [꼼꼼한 수정 2] 버전 정보가 없는 경우 방어
+        if "downloadURL" not in v or "version" not in v:
+            continue
+
+        file_name_in_url = v["downloadURL"].split('/')[-1].replace('%20', ' ')
+        actual_url = all_release_assets.get(file_name_in_url)
+        
+        if actual_url and v["downloadURL"] != actual_url:
+            print(f"링크 갱신: {app['name']} ({v['version']})")
+            v["downloadURL"] = actual_url
+            
+            # [꼼꼼한 수정 3] KeyError 방지를 위해 .get() 사용
+            if app.get("version") == v.get("version"):
+                app["downloadURL"] = actual_url
+
+# D. 로컬 IPA 파일 처리
 ipa_files = [f for f in os.listdir('.') if f.lower().endswith('.ipa')]
 
 for ipa_file in ipa_files:
     info = extract_ipa_info_only(ipa_file)
-    if not info: continue
+    if not info: 
+        print(f"⚠️ {ipa_file}에서 정보를 추출할 수 없어 건너뜁니다.")
+        continue
 
-    # 릴리즈 에셋에서 실제 주소를 가져오고, 없으면 기본값(1.0) 생성
     download_url = all_release_assets.get(ipa_file)
     if not download_url:
         download_url = f"{REPO_URL}/releases/download/1.0/{ipa_file.replace(' ', '%20')}"
 
     new_v = {
-        "version": info['version'],
+        "version": info.get('version', '1.0'), # 안전하게 get 사용
         "date": datetime.now().strftime("%Y-%m-%d"),
         "localizedDescription": "NightFox", 
         "downloadURL": download_url,
-        "size": info['size'],
+        "size": info.get('size', 0),
         "buildVersion": None,
         "minOSVersion": None
     }
 
-    # 앱 목록에서 해당 번들ID 찾기
-    app_entry = next((a for a in base_data['apps'] if a['bundleIdentifier'] == info['bundleID']), None)
+    app_entry = next((a for a in base_data['apps'] if a.get('bundleIdentifier') == info.get('bundleID')), None)
 
     if app_entry:
-        app_entry["version"] = info['version']
+        app_entry["version"] = info.get('version', app_entry.get("version"))
         app_entry["downloadURL"] = download_url
         apply_nightfox_branding(app_entry)
         if "versions" not in app_entry: app_entry["versions"] = []
-        # 같은 버전 정보가 있다면 제거 후 최신 데이터 삽입
-        app_entry["versions"] = [v for v in app_entry["versions"] if v['version'] != info['version']]
+        app_entry["versions"] = [v for v in app_entry["versions"] if v.get('version') != info.get('version')]
         app_entry["versions"].insert(0, new_v)
     else:
         new_app = {
-            "name": info['name'],
-            "bundleIdentifier": info['bundleID'],
-            "version": info['version'],
+            "name": info.get('name', ipa_file),
+            "bundleIdentifier": info.get('bundleID', 'com.unknown'),
+            "version": info.get('version', '1.0'),
             "downloadURL": download_url,
-            "iconURL": "https://i.imgur.com/nAsnPKq.png", # 기본 아이콘
+            "iconURL": "https://i.imgur.com/nAsnPKq.png",
             "tintColor": "#00b39e",
             "category": "other",
             "screenshots": [],
@@ -142,7 +147,7 @@ for ipa_file in ipa_files:
 
 # --- 5. 최종 결과 저장 ---
 with open(JSON_FILE, 'w', encoding='utf-8') as f:
-    # 괄호가 깨지지 않도록 깔끔하게 인덴트를 주어 저장
     json.dump(base_data, f, indent=2, ensure_ascii=False)
 
+# [꼼꼼한 수정 4] 변수명을 사용하여 정확한 로그 출력
 print(f"🎉 모든 작업이 완료되었습니다! 파일명: {JSON_FILE}")
