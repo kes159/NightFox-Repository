@@ -10,7 +10,7 @@ from github import Github  # PyGithub 라이브러리 필요
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 REPO_NAME = "kes159/NightFox-Repository"
 REPO_URL = f"https://github.com/{REPO_NAME}"
-JSON_FILE = "NightFox_Repository.json"
+JSON_FILE = "NightFox Repository.json"
 
 g = Github(GITHUB_TOKEN)
 repo = g.get_repo(REPO_NAME)
@@ -33,7 +33,7 @@ def apply_nightfox_branding(entry):
 
 # --- 3. 기본 데이터 구조 정의 ---
 base_data = {
-    "name": "NightFox_Repository",
+    "name": "NightFox Repository",
     "identifier": "com.nightfox.repo",
     "subtitle": "NightFox's App Repository",
     "description": "Welcome to NightFox's source!",
