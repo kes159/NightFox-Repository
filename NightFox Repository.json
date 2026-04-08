@@ -1274,6 +1274,30 @@
         }
       },
       "patreon": {}
+    },
+    {
+      "name": "duet",
+      "bundleIdentifier": "com.kairos.duet",
+      "version": "3.1.4",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.4/Duet.Display.ipa",
+      "iconURL": "https://i.imgur.com/nAsnPKq.png",
+      "tintColor": "#00b39e",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "3.1.4",
+          "date": "2026-04-08T13:23:47+09:00",
+          "localizedDescription": "NightFox Build - 3.1.4",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.4/Duet.Display.ipa",
+          "size": 44199338,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox"
     }
   ]
 }
