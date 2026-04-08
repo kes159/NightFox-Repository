@@ -91,11 +91,27 @@ base_data = {
 if os.path.exists(JSON_FILE):
     with open(JSON_FILE, 'r', encoding='utf-8') as f:
         loaded_data = json.load(f)
-        # 기존 앱 리스트는 가져오되, 상단 정보(식별자 등)는 코드에 적힌 것으로 강제 고정
+        
+        # 1. 앱 리스트만 가져오기
         base_data['apps'] = loaded_data.get('apps', [])
-        # 만약 기존에 news가 있었다면 유지하고 싶을 때:
-        # base_data['news'] = loaded_data.get('news', base_data['news'])
+        
+        # 2. 상단 정보(식별자 등)는 코드에 적힌 것으로 '강제 업데이트'
+        # 이렇게 해야 JSON 파일에 identifier가 확실히 박힙니다.
+        base_data.update({
+            "name": "NightFox Repository",
+            "identifier": "com.nightfox.repo",
+            "subtitle": "NightFox's App Repository",
+            "description": "Welcome to NightFox's source!",
+            "iconURL": "https://i.imgur.com/EVyT7Ji.png"
+        })
 
+        # 3. 뉴스 데이터의 null 값 방지
+        if 'news' in loaded_data:
+            for item in loaded_data['news']:
+                if item.get('appID') is None:
+                    item['appID'] = "" # null 대신 빈 문자열로 정화
+            base_data['news'] = loaded_data['news']
+            
 # B. 모든 릴리즈에서 실제 IPA 다운로드 주소 수집
 all_release_assets = {}
 print("GitHub 모든 릴리즈에서 최신 다운로드 링크를 검색 중...")
