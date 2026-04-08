@@ -1,21 +1,12 @@
 {
   "name": "NightFox Repository",
-  "identifier": "com.nightfox.repo",
   "subtitle": "NightFox's App Repository",
   "description": "Welcome to NightFox's source!",
   "iconURL": "https://i.imgur.com/EVyT7Ji.png",
   "website": "https://github.com/kes159/NightFox-Repository",
+  "patreonURL": "https://patreon.com/altstudio",
   "tintColor": "#00b39e",
   "featuredApps": [],
-  "news": [
-    {
-      "title": "Source Updated",
-      "identifier": "update-20260408",
-      "caption": "Latest apps added.",
-      "date": "2026-04-08",
-      "tintColor": "#00b39e"
-    }
-  ],
   "apps": [
     {
       "name": "LC+SS 3.7.4 Nightly",
@@ -1300,12 +1291,14 @@
       "patreon": {}
     },
     {
-      "name": "Music Video -ipaomtk.com",
+      "name": "Music Video",
       "bundleIdentifier": "com.hhp.musicVideo",
-      "version": "2.11.0",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.6/MusicVideo.ipa",
-      "iconURL": "https://i.imgur.com/nAsnPKq.png",
-      "tintColor": "#00b39e",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://i.imgur.com/0O3udvr.png",
+      "tintColor": "#f40488",
       "category": "other",
       "screenshots": [],
       "versions": [
@@ -1319,9 +1312,29 @@
           "minOSVersion": null
         }
       ],
-      "developerName": "NightFox",
-      "subtitle": "NightFox",
-      "localizedDescription": "NightFox"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "So you can use your music",
+          "NSMicrophoneUsageDescription": "So you can record your own audio",
+          "NSPhotoLibraryUsageDescription": "So you can load & save your videos",
+          "NSUserTrackingUsageDescription": "Your data will be used to deliver personalised ads to you."
+        }
+      },
+      "patreon": {}
+    }
+  ],
+  "news": [
+    {
+      "title": "Source Updated",
+      "identifier": "update-20260408",
+      "caption": "Latest apps added.",
+      "date": "2026-04-08T09:00",
+      "tintColor": "#00b39e",
+      "imageURL": "",
+      "notify": true,
+      "url": "https://example.com/new_feature_details",
+      "appID": null
     }
   ]
 }
