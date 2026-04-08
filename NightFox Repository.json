@@ -1,12 +1,25 @@
 {
   "name": "NightFox Repository",
+  "identifier": "com.nightfox.repo",
   "subtitle": "NightFox's App Repository",
   "description": "Welcome to NightFox's source!",
   "iconURL": "https://i.imgur.com/EVyT7Ji.png",
   "website": "https://github.com/kes159/NightFox-Repository",
-  "patreonURL": "https://patreon.com/altstudio",
   "tintColor": "#00b39e",
   "featuredApps": [],
+  "news": [
+    {
+      "title": "Source Updated",
+      "identifier": "update-20260408",
+      "caption": "Latest apps added.",
+      "date": "2026-04-08T09:00",
+      "tintColor": "#00b39e",
+      "imageURL": "",
+      "notify": true,
+      "url": "https://example.com/new_feature_details",
+      "appID": ""
+    }
+  ],
   "apps": [
     {
       "name": "LC+SS 3.7.4 Nightly",
@@ -1324,17 +1337,5 @@
       "patreon": {}
     }
   ],
-  "news": [
-    {
-      "title": "Source Updated",
-      "identifier": "update-20260408",
-      "caption": "Latest apps added.",
-      "date": "2026-04-08T09:00",
-      "tintColor": "#00b39e",
-      "imageURL": "",
-      "notify": true,
-      "url": "https://example.com/new_feature_details",
-      "appID": null
-    }
-  ]
+  "patreonURL": "https://patreon.com/altstudio"
 }
