@@ -274,28 +274,35 @@ for ipa_file in ipa_files:
 
 print("✅ 버전별 링크 격리 및 대표 정보 업데이트 완료")
 
-# --- 5. 최종 데이터 정화 (Feather 크래시 방지용) ---
+# --- 5. 원자 단위 데이터 정제 (Feather 무한 로딩 해결책) ---
 
-# A. 뉴스 데이터 정화: 날짜 규격 통일 및 빈 appID 삭제
-if 'news' in base_data:
-    for item in base_data['news']:
-        # 1. appID가 빈 문자열("")이면 키 자체를 삭제
-        if 'appID' in item and item['appID'] == "":
-            del item['appID']
-        
-        # 2. 날짜 포맷이 불안정하면(초/타임존 누락 등) 안전한 'YYYY-MM-DD'로 절삭
-        if 'date' in item and len(item['date']) > 10:
-            item['date'] = item['date'][:10] # "2026-04-08T09:00" -> "2026-04-08"
+def atomic_clean(obj):
+    """
+    None, "", [], {} 등 모든 비어있는 요소를 재귀적으로 제거합니다.
+    """
+    if isinstance(obj, dict):
+        # 값이 비어있지 않은 것만 골라서 다시 딕셔너리 생성
+        cleaned_dict = {
+            k: atomic_clean(v) 
+            for k, v in obj.items() 
+            if v is not None and v != "" and v != [] and v != {}
+        }
+        return cleaned_dict
+    elif isinstance(obj, list):
+        # 리스트 내부 요소 정제 후 비어있지 않은 것만 남김
+        cleaned_list = [
+            atomic_clean(i) 
+            for i in obj 
+            if i is not None and i != "" and i != [] and i != {}
+        ]
+        return cleaned_list
+    else:
+        return obj
 
-# B. 앱 데이터 정화: Feather가 싫어하는 null 값 완전히 제거
-for app in base_data.get('apps', []):
-    for version in app.get('versions', []):
-        # 값이 None(null)인 키들을 찾아 안전하게 삭제
-        keys_to_remove = [k for k, v in version.items() if v is None]
-        for k in keys_to_remove:
-            del version[k]
+# 전체 데이터에 청소 함수 적용
+base_data = atomic_clean(base_data)
 
-# --- 6. JSON 파일 저장 (기존 코드) ---
+# --- 6. JSON 파일 저장 ---
 with open(JSON_FILE, 'w', encoding='utf-8') as f:
     json.dump(base_data, f, ensure_ascii=False, indent=2)
 
