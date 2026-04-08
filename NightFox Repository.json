@@ -40,7 +40,7 @@
     },
     {
       "name": "LC+SS 3.7.4 Nightly",
-      "bundleIdentifier": "com.896m8fsv43.aq7806s6ls",
+      "bundleIdentifier": "com.kdt.livecontainer",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "NightFox",
@@ -55,7 +55,9 @@
           "date": "2026-04-07",
           "localizedDescription": "New release!",
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.3.4/LiveContainer+SideStore.Nightly.ipa",
-          "size": 34540268
+          "size": 34540268,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
       "appPermissions": {
@@ -64,11 +66,12 @@
           "NSCameraUsageDescription": "NightFox",
           "NSMicrophoneUsageDescription": "NightFox"
         }
-      }
+      },
+      "patreon": {}
     },
     {
       "name": "LC+SS 3.7.2 Stable",
-      "bundleIdentifier": "com.kdt.livecontainer",
+      "bundleIdentifier": "com.kdt.livecontainer.1",
       "marketplaceID": "",
       "developerName": "NightFox",
       "subtitle": "NightFox",
@@ -83,7 +86,9 @@
           "date": "2026-04-07",
           "localizedDescription": "Release!",
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/LiveContainer+SideStore.Nightly.ipa",
-          "size": 34540268
+          "size": 34540268,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "3.7.2",
@@ -132,13 +137,38 @@
           "NSUserTrackingUsageDescription": "The guest app is requesting for this permission."
         }
       },
-      "patreon": {},
-      "version": "3.7.4",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.0/LiveContainer+SideStore.Nightly.ipa",
-      "versionDate": "2026-04-07"
+      "patreon": {}
     },
     {
-      "name": "YTPlus",
+      "name": "YTPlus_21.12.4",
+      "bundleIdentifier": "com.google.ios.youtube.1",
+      "marketplaceID": "",
+      "developerName": "Example Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://i.imgur.com/53YIYW4.png",
+      "tintColor": "#fc0434",
+      "category": "other",
+      "screenshots": [],
+      "versions": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "This lets you create videos using the app.",
+          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites.",
+          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
+          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
+          "NSAppleMusicUsageDescription": "This lets you add your own audio files to your videos.",
+          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
+          "NSLocationWhenInUseUsageDescription": "This enables local content discovery, improved recommendations, and enhanced search results.",
+          "NSContactsUsageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with.",
+          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created."
+        }
+      },
+      "patreon": {}
+    },
+    {
+      "name": "YTPlus_21.03.2",
       "bundleIdentifier": "com.google.ios.youtube",
       "marketplaceID": "",
       "developerName": "NightFox",
