@@ -1,52 +1,13 @@
 {
   "name": "NightFox Repository",
-  "identifier": "com.nightfox.repo",
   "subtitle": "NightFox's App Repository",
   "description": "Welcome to NightFox's source!",
   "iconURL": "https://i.imgur.com/EVyT7Ji.png",
   "website": "https://github.com/kes159/NightFox-Repository",
+  "patreonURL": "https://patreon.com/altstudio",
   "tintColor": "#00b39e",
   "featuredApps": [],
-  "news": [
-    {
-      "title": "Source Updated",
-      "identifier": "update-20260408",
-      "caption": "Latest apps added.",
-      "date": "2026-04-08",
-      "tintColor": "#00b39e"
-    }
-  ],
   "apps": [
-    {
-      "name": "Feather",
-      "bundleIdentifier": "thewonderofyou.Feather",
-      "marketplaceID": "",
-      "developerName": "NightFox",
-      "subtitle": "NightFox",
-      "localizedDescription": "NightFox",
-      "iconURL": "https://i.imgur.com/g9tqLtp.png",
-      "tintColor": "#e12e55",
-      "category": "other",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "2.6.0",
-          "date": "2026-04-05T15:00:00+09:00",
-          "localizedDescription": "",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Feather.2.6.0.ipa",
-          "size": 100000,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSHumanReadableCopyright": "Copyright (c) 2024 Samara M"
-        }
-      },
-      "patreon": {}
-    },
     {
       "name": "LC+SS 3.7.4 Nightly",
       "bundleIdentifier": "com.kdt.livecontainer",
@@ -193,9 +154,7 @@
           "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created."
         }
       },
-      "patreon": {},
-      "version": "21.12.4",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.3/YouTubePlus_5.2b4_21.12.4.ipa"
+      "patreon": {}
     },
     {
       "name": "Instagram",
@@ -1278,9 +1237,11 @@
     {
       "name": "duet",
       "bundleIdentifier": "com.kairos.duet",
-      "version": "3.1.4",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.4/Duet.Display.ipa",
-      "iconURL": "https://i.imgur.com/nAsnPKq.png",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://play-lh.googleusercontent.com/85nFUi50EaX5re_f1qa_JoMdd9LgtdrC3KB80pr9VXqyo3jAfZcyq19SczEmTPZoWXI",
       "tintColor": "#00b39e",
       "category": "other",
       "screenshots": [],
@@ -1295,16 +1256,20 @@
           "minOSVersion": null
         }
       ],
-      "developerName": "NightFox",
-      "subtitle": "NightFox",
-      "localizedDescription": "NightFox"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "name": "File Converter",
       "bundleIdentifier": "com.icecoldapps.fileconverter",
-      "version": "12.1.14",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.5/File.Converter.ipa",
-      "iconURL": "https://i.imgur.com/nAsnPKq.png",
+      "marketplaceID": "",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/6b/f8/b26bf8a0-d926-fa75-7ab0-a6c1d80a64b8/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/460x0w.png",
       "tintColor": "#00b39e",
       "category": "other",
       "screenshots": [],
@@ -1319,9 +1284,24 @@
           "minOSVersion": null
         }
       ],
-      "developerName": "NightFox",
-      "subtitle": "NightFox",
-      "localizedDescription": "NightFox"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
+    }
+  ],
+  "news": [
+    {
+      "title": "제 소스를 이용해 주셔서 감사합니다.",
+      "identifier": "update-20260408",
+      "caption": "NightFox",
+      "date": "2026-04-08T09:00",
+      "tintColor": "#00b39e",
+      "imageURL": "",
+      "notify": true,
+      "url": "https://example.com/new_feature_details",
+      "appID": null
     }
   ]
 }
