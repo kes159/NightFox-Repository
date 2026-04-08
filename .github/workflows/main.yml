@@ -42,34 +42,26 @@ jobs:
           TAG_NAME: ${{ github.event.release.tag_name }}
         run: python update_source.py
 
-      - name: Commit and Push
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add .
-        # [skip ci]를 넣으면 액션이 본인이 커밋한 거에는 다시 반응하지 않습니다.
-        git commit -m "Update SideStore Source [skip ci]" || echo "No changes to commit"
-        git push
-        
-          # 1. 사용자 설정
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          # 2. 파일 추가 (공백 대응)
-          git add "NightFox*.json"
+      - name: Commit and Push Changes
+        run: |
+          # 1. 사용자 설정 (가급적 공식 bot 계정 사용 권장)
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # 2. 변경된 파일 추가 (JSON 파일 및 아이콘 폴더)
+          # update_source.py가 수정한 identifier 포함 JSON을 스테이징합니다.
+          git add "NightFox Repository.json"
           if [ -d "icons" ]; then git add icons/*.png; fi
-          
-          # 3. 변경 사항이 있을 때만 실행
+
+          # 3. 변경 사항이 있을 때만 실행 (불필요한 에러 방지)
           if ! git diff --cached --quiet; then
-            # 임시 커밋 생성
-            git commit -m "chore: update repository source and icons [skip ci]"
+            # [핵심] [skip ci]를 넣어 무한 루프를 방지합니다.
+            git commit -m "chore: update repository with identifier [skip ci]"
             
-            # 4. 원격 주소 설정 (토큰 포함)
+            # 4. 원격 주소 설정 및 강제 푸시
+            # 헤드(HEAD)를 main 브랜치에 직접 꽂아 넣는 방식입니다.
             git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-            
-            # 5. [핵심] 현재 내 위치(HEAD)를 원격의 main 브랜치로 강제로 꽂아넣기
-            # 이 명령은 앞뒤 순서 안 따지고 현재 상태로 main을 덮어씌웁니다.
             git push origin HEAD:main --force
           else
-            echo "No changes to commit"
+            echo "No changes to commit - JSON is already up to date."
           fi
