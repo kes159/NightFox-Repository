@@ -199,6 +199,15 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "21.12.4",
+          "date": "2026-04-08",
+          "localizedDescription": "NightFox",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.1/YouTubePlus_5.2b4_21.12.4.ipa",
+          "size": 126657405,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
           "version": "21.03.2",
           "date": "2026-04-06T00:00:00+09:00",
           "localizedDescription": "New release!",
@@ -222,7 +231,9 @@
           "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created."
         }
       },
-      "patreon": {}
+      "patreon": {},
+      "version": "21.12.4",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.1/YouTubePlus_5.2b4_21.12.4.ipa"
     },
     {
       "name": "Instagram",
