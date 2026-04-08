@@ -2,7 +2,9 @@ name: Update SideStore Source
 on:
   push:
     paths:
-      - 'NightFox Repository.json' # 이 파일이 업로드될 때마다 실행
+      - 'NightFox Repository.json' # JSON 수동 업로드 시 실행
+  release:
+    types: [published] # 새로운 릴리즈가 '게시'될 때 자동으로 실행
   workflow_dispatch: # 직접 버튼 눌러서 실행하는 기능 유지
 
 jobs:
