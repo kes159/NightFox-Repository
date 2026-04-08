@@ -5,9 +5,17 @@
   "description": "Welcome to NightFox's source!",
   "iconURL": "https://i.imgur.com/EVyT7Ji.png",
   "website": "https://github.com/kes159/NightFox-Repository",
-  "patreonURL": "https://patreon.com/altstudio",
   "tintColor": "#00b39e",
   "featuredApps": [],
+  "news": [
+    {
+      "title": "Source Updated",
+      "identifier": "update-20260408",
+      "caption": "Latest apps added.",
+      "date": "2026-04-08",
+      "tintColor": "#00b39e"
+    }
+  ],
   "apps": [
     {
       "name": "LC+SS 3.7.4 Nightly",
@@ -1290,18 +1298,30 @@
         "privacy": {}
       },
       "patreon": {}
-    }
-  ],
-  "news": [
+    },
     {
-      "title": "제 소스를 이용해 주셔서 감사합니다.",
-      "identifier": "update-20260409",
-      "caption": "NightFox",
-      "date": "2026-04-09",
+      "name": "Music Video -ipaomtk.com",
+      "bundleIdentifier": "com.hhp.musicVideo",
+      "version": "2.11.0",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.6/MusicVideo.ipa",
+      "iconURL": "https://i.imgur.com/nAsnPKq.png",
       "tintColor": "#00b39e",
-      "imageURL": "",
-      "notify": true,
-      "url": "https://example.com/new_feature_details"
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "2.11.0",
+          "date": "2026-04-08T18:48:36+09:00",
+          "localizedDescription": "NightFox Build - 2.11.0",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.6/MusicVideo.ipa",
+          "size": 6430679,
+          "buildVersion": "0",
+          "minOSVersion": null
+        }
+      ],
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox"
     }
   ]
 }
