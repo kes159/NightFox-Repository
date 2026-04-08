@@ -1,5 +1,6 @@
 {
   "name": "NightFox Repository",
+  "identifier": "com.nightfox.repo",
   "subtitle": "NightFox's App Repository",
   "description": "Welcome to NightFox's source!",
   "iconURL": "https://i.imgur.com/EVyT7Ji.png",
@@ -1294,14 +1295,13 @@
   "news": [
     {
       "title": "제 소스를 이용해 주셔서 감사합니다.",
-      "identifier": "update-20260408",
+      "identifier": "update-20260409",
       "caption": "NightFox",
-      "date": "2026-04-08T09:00",
+      "date": "2026-04-09",
       "tintColor": "#00b39e",
       "imageURL": "",
       "notify": true,
-      "url": "https://example.com/new_feature_details",
-      "appID": null
+      "url": "https://example.com/new_feature_details"
     }
   ]
 }
