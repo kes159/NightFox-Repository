@@ -74,28 +74,25 @@ for release in repo.get_releases():
                 all_release_assets[asset.name] = asset.browser_download_url
                 print(f"찾음: {asset.name} (태그: {release.tag_name})")
 
-# C. 기존 JSON에 적힌 앱들의 링크 업데이트 (재점검 및 방어 로직 강화)
+# C. 기존 JSON 앱 데이터 업데이트 (에러 방지 강화)
 print("기존 JSON 앱 데이터의 링크를 검증 및 업데이트 중...")
 for app in base_data.get("apps", []):
-    # [꼼꼼한 수정 1] 필수 키가 없는 앱 항목은 건너뛰기
-    if "versions" not in app or "name" not in app:
-        print(f"⚠️ 경고: '{app.get('name', '알 수 없는 앱')}' 항목의 구조가 올바르지 않아 건너뜁니다.")
-        continue
-
+    # versions 리스트가 없는 항목은 아예 건너뜁니다.
+    if "versions" not in app: continue
+    
     for v in app["versions"]:
-        # [꼼꼼한 수정 2] 버전 정보가 없는 경우 방어
-        if "downloadURL" not in v or "version" not in v:
-            continue
-
+        # v가 딕셔너리가 아니거나 downloadURL이 없으면 패스
+        if not isinstance(v, dict) or "downloadURL" not in v: continue
+        
         file_name_in_url = v["downloadURL"].split('/')[-1].replace('%20', ' ')
         actual_url = all_release_assets.get(file_name_in_url)
         
         if actual_url and v["downloadURL"] != actual_url:
-            print(f"링크 갱신: {app['name']} ({v['version']})")
+            print(f"링크 갱신: {app.get('name', '알 수 없는 앱')} ({v.get('version', '?.?')})")
             v["downloadURL"] = actual_url
             
-            # [꼼꼼한 수정 3] KeyError 방지를 위해 .get() 사용
-            if app.get("version") == v.get("version"):
+            # 여기서 .get()을 써야 안전합니다.
+            if app.get("version") == v.get("version") and app.get("version") is not None:
                 app["downloadURL"] = actual_url
 
 # D. 로컬 IPA 파일 처리
