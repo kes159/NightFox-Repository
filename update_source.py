@@ -85,17 +85,16 @@ base_data = {
     "apps": []
 }
 
-# --- 4. 메인 실행 로직 ---
 
+# --- 4. 기존 데이터 로드 및 강제 업데이트 ---
 # A. 기존 JSON 데이터 불러오기
 if os.path.exists(JSON_FILE):
     with open(JSON_FILE, 'r', encoding='utf-8') as f:
-        try:
-            existing_data = json.load(f)
-            if "apps" in existing_data:
-                base_data["apps"] = existing_data["apps"]
-        except: 
-            print("기존 JSON을 읽는 중 오류가 발생하여 새로 생성합니다.")
+        loaded_data = json.load(f)
+        # 기존 앱 리스트는 가져오되, 상단 정보(식별자 등)는 코드에 적힌 것으로 강제 고정
+        base_data['apps'] = loaded_data.get('apps', [])
+        # 만약 기존에 news가 있었다면 유지하고 싶을 때:
+        # base_data['news'] = loaded_data.get('news', base_data['news'])
 
 # B. 모든 릴리즈에서 실제 IPA 다운로드 주소 수집
 all_release_assets = {}
