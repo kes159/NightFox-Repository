@@ -274,9 +274,30 @@ for ipa_file in ipa_files:
 
 print("✅ 버전별 링크 격리 및 대표 정보 업데이트 완료")
 
-# --- 5. 최종 결과 저장 ---
+# --- 5. 최종 데이터 정화 (Feather 크래시 방지용) ---
+
+# A. 뉴스 데이터 정화: 날짜 규격 통일 및 빈 appID 삭제
+if 'news' in base_data:
+    for item in base_data['news']:
+        # 1. appID가 빈 문자열("")이면 키 자체를 삭제
+        if 'appID' in item and item['appID'] == "":
+            del item['appID']
+        
+        # 2. 날짜 포맷이 불안정하면(초/타임존 누락 등) 안전한 'YYYY-MM-DD'로 절삭
+        if 'date' in item and len(item['date']) > 10:
+            item['date'] = item['date'][:10] # "2026-04-08T09:00" -> "2026-04-08"
+
+# B. 앱 데이터 정화: Feather가 싫어하는 null 값 완전히 제거
+for app in base_data.get('apps', []):
+    for version in app.get('versions', []):
+        # 값이 None(null)인 키들을 찾아 안전하게 삭제
+        keys_to_remove = [k for k, v in version.items() if v is None]
+        for k in keys_to_remove:
+            del version[k]
+
+# --- 6. JSON 파일 저장 (기존 코드) ---
 with open(JSON_FILE, 'w', encoding='utf-8') as f:
-    json.dump(base_data, f, indent=2, ensure_ascii=False)
+    json.dump(base_data, f, ensure_ascii=False, indent=2)
 
 # [꼼꼼한 수정 4] 변수명을 사용하여 정확한 로그 출력
 print(f"🎉 모든 작업이 완료되었습니다! 파일명: {JSON_FILE}")
