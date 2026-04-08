@@ -148,7 +148,6 @@
       },
       "patreon": {}
     },
-
     {
       "name": "YTPlus_21.03.2",
       "bundleIdentifier": "com.google.ios.youtube",
@@ -165,7 +164,7 @@
           "version": "21.12.4",
           "date": "2026-04-08",
           "localizedDescription": "NightFox",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.2/YouTubePlus_5.2b4_21.12.4.ipa",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.3/YouTubePlus_5.2b4_21.12.4.ipa",
           "size": 126657405,
           "buildVersion": null,
           "minOSVersion": null
@@ -196,7 +195,7 @@
       },
       "patreon": {},
       "version": "21.12.4",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.2/YouTubePlus_5.2b4_21.12.4.ipa"
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.3/YouTubePlus_5.2b4_21.12.4.ipa"
     },
     {
       "name": "Instagram",
