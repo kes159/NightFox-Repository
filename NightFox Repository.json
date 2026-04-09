@@ -1,0 +1,18 @@
+{
+  "name": "NightFox Repository",
+  "identifier": "com.nightfox.repo",
+  "subtitle": "NightFox's App Repository",
+  "description": "Welcome to NightFox's source!",
+  "iconURL": "https://i.imgur.com/EVyT7Ji.png",
+  "website": "https://github.com/kes159/NightFox-Repository",
+  "tintColor": "#00b39e",
+  "news": [
+    {
+      "title": "Source Updated",
+      "identifier": "update-20260409",
+      "caption": "Latest apps added.",
+      "date": "2026-04-09",
+      "tintColor": "#00b39e"
+    }
+  ]
+}
