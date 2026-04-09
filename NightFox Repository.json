@@ -184,6 +184,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "2026.13.1",
+          "date": "2026-04-09T20:58:40+09:00",
+          "localizedDescription": "NightFox Build - 2026.13.1",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.5.2/Reddit_2026_13_1.ipa",
+          "size": 156441846,
+          "buildVersion": "626918"
+        },
+        {
           "version": "2026.06.0",
           "date": "2026-04-05T15:00:00+09:00",
           "localizedDescription": "New release!",
@@ -201,7 +209,9 @@
           "NSPhotoLibraryUsageDescription": "Reddit needs access to your photo library to post, save, and upload photos or videos.",
           "NSUserTrackingUsageDescription": "This allows Reddit to provide you with a better ads experience."
         }
-      }
+      },
+      "version": "2026.13.1",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.5.2/Reddit_2026_13_1.ipa"
     },
     {
       "name": "NeoFreeBird",
