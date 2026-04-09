@@ -376,8 +376,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/respringapp.ipa",
           "size": 265000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "Picsew",
@@ -561,8 +560,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/litomi-ios-altstore.ipa",
           "size": 2500000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "Tachimanga",
@@ -686,8 +684,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Infinity.Blade.I.-.Community.Patch.v2.1.ipa",
           "size": 636000000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "IB2",
@@ -754,8 +751,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Plague.Inc.ipa",
           "size": 86800000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "BloonsTD6",
@@ -798,8 +794,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/CloverPit-1.3.8.ipa",
           "size": 115100000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "Delta",
@@ -844,8 +839,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Entitlement.ipa",
           "size": 2600000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "MeloNX",
@@ -1098,8 +1092,7 @@
           "size": 35377688,
           "buildVersion": "2064"
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "Music Video",
