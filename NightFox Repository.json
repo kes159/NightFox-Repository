@@ -926,6 +926,14 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.7/Eeveespotify_9.1.32.ipa",
           "size": 97583125,
           "buildVersion": "913202081"
+        },
+        {
+          "version": "9.1.12",
+          "date": "2026-04-09T15:20:25+09:00",
+          "localizedDescription": "NightFox Build - 9.1.12",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.8/EeveeSpotify-9.1.12patched.ipa",
+          "size": 95082896,
+          "buildVersion": "911200224"
         }
       ],
       "appPermissions": {
@@ -948,8 +956,8 @@
           "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads or content to you."
         }
       },
-      "version": "9.1.32",
-      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.7/Eeveespotify_9.1.32.ipa"
+      "version": "9.1.12",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.4.8/EeveeSpotify-9.1.12patched.ipa"
     },
     {
       "name": "Infuse",
