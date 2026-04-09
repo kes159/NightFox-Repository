@@ -21,14 +21,15 @@
     {
       "name": "Feather",
       "bundleIdentifier": "thewonderofyou.Feather",
-      "developerName": "Example Developer",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "developerName": "NightFox",
+      "subtitle": "NightFox",
+      "localizedDescription": "NightFox",
       "iconURL": "https://i.imgur.com/ODW0yNG.png",
       "tintColor": "#ff89a1",
       "category": "other",
       "versions": [
         {
+          "localizedDescription": "New release!",
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.5.3/Feather.2.6.0.ipa",
           "size": 15300000,
           "version": "2.6.0",
