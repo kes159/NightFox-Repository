@@ -883,10 +883,11 @@
       "versions": [
         {
           "version": "9.13.3",
-          "date": "2026-04-05T12:30:00+09:00",
-          "localizedDescription": "First AltStore release!",
-          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/YouTube.Music.Premium.YTMusicUltimate.ipa",
-          "size": 98900000
+          "date": "2026-04-12T08:14:15+09:00",
+          "localizedDescription": "NightFox Build - 9.13.3",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.5.7/YTMusicUltimate.ipa",
+          "size": 98897036,
+          "buildVersion": "9.13.3"
         }
       ],
       "appPermissions": {
@@ -900,7 +901,9 @@
           "NSPhotoLibraryAddUsageDescription": "To save images, allow YouTube Music to access your photo library.",
           "NSPhotoLibraryUsageDescription": "To choose a profile picture, allow YouTube Music to access your photos."
         }
-      }
+      },
+      "version": "9.13.3",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.5.7/YTMusicUltimate.ipa"
     },
     {
       "name": "KakaoTalk2",
