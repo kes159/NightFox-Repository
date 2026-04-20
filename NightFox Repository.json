@@ -6,17 +6,6 @@
   "iconURL": "https://i.imgur.com/EVyT7Ji.png",
   "website": "https://github.com/kes159/NightFox-Repository",
   "tintColor": "#00b39e",
-  "news": [
-    {
-      "title": "Source Updated",
-      "identifier": "update-20260412",
-      "caption": "Latest apps added.",
-      "date": "2026-04-12T09:00",
-      "tintColor": "#00b39e",
-      "notify": true,
-      "url": "https://example.com/new_feature_details"
-    }
-  ],
   "apps": [
     {
       "name": "Feather",
@@ -384,8 +373,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/respringapp.ipa",
           "size": 265000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "Picsew",
@@ -569,8 +557,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/litomi-ios-altstore.ipa",
           "size": 2500000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "Tachimanga",
@@ -719,8 +706,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Infinity.Blade.I.-.Community.Patch.v2.1.ipa",
           "size": 636000000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "IB2",
@@ -787,8 +773,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Plague.Inc.ipa",
           "size": 86800000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "BloonsTD6",
@@ -831,8 +816,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/CloverPit-1.3.8.ipa",
           "size": 115100000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "Delta",
@@ -877,8 +861,7 @@
           "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.1/Entitlement.ipa",
           "size": 2600000
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "MeloNX",
@@ -1022,8 +1005,7 @@
           "size": 35377688,
           "buildVersion": "2064"
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "CameraMark",
@@ -1070,8 +1052,7 @@
           "size": 211737349,
           "buildVersion": "2920"
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "Swiftgram",
@@ -1091,8 +1072,7 @@
           "size": 166402991,
           "buildVersion": "274"
         }
-      ],
-      "appPermissions": {}
+      ]
     },
     {
       "name": "Infuse Plus",
