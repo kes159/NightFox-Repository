@@ -18,6 +18,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "2.8.2",
+          "date": "2026-05-02T20:56:51+09:00",
+          "localizedDescription": "NightFox Build - 2.8.2",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.5.9/FeatherPlus_2.8.2.ipa",
+          "size": 14351563,
+          "buildVersion": "52c20daf0d80dacd1593ec2362eb3ecb95273ef6"
+        },
+        {
           "version": "2.6.0",
           "date": "2026-04-09T21:49:00+09:00",
           "localizedDescription": "New release!",
@@ -29,7 +37,9 @@
         "privacy": {
           "NSHumanReadableCopyright": "Copyright (c) 2024 Samara M"
         }
-      }
+      },
+      "version": "2.8.2",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.5.9/FeatherPlus_2.8.2.ipa"
     },
     {
       "name": "StikDebug",
