@@ -76,6 +76,46 @@
       "category": "other",
       "versions": [
         {
+          "version": "21.22.4",
+          "date": "2026-05-30T03:43:03+09:00",
+          "localizedDescription": "NightFox Build - 21.22.4",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.6.0/YTPlus_5.2.1_21.22.04.ipa",
+          "size": 127483041,
+          "buildVersion": "21.22.4"
+        },
+        {
+          "version": "21.21.3",
+          "date": "2026-05-30T03:43:03+09:00",
+          "localizedDescription": "NightFox Build - 21.21.3",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.6.0/YTPlus_5.2.1_21.21.03.ipa",
+          "size": 132351567,
+          "buildVersion": "21.21.3"
+        },
+        {
+          "version": "21.20.4",
+          "date": "2026-05-30T03:43:03+09:00",
+          "localizedDescription": "NightFox Build - 21.20.4",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.6.0/YTPlus_5.2.1_21.20.4.ipa",
+          "size": 127001891,
+          "buildVersion": "21.20.4"
+        },
+        {
+          "version": "21.19.2",
+          "date": "2026-05-30T03:43:03+09:00",
+          "localizedDescription": "NightFox Build - 21.19.2",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.6.0/YTPlus_5.2.1_21.19.02.ipa",
+          "size": 131301251,
+          "buildVersion": "21.19.2"
+        },
+        {
+          "version": "21.18.4",
+          "date": "2026-05-30T03:43:02+09:00",
+          "localizedDescription": "NightFox Build - 21.18.4",
+          "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.6.0/YTPlus_5.2.1_21.18.4.ipa",
+          "size": 125400887,
+          "buildVersion": "21.18.4"
+        },
+        {
           "version": "5.2.1_21.17.3",
           "date": "2026-04-30T21:33:00+09:00",
           "localizedDescription": "First AltStore release!",
@@ -109,7 +149,9 @@
           "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created.",
           "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites."
         }
-      }
+      },
+      "version": "21.22.4",
+      "downloadURL": "https://github.com/kes159/NightFox-Repository/releases/download/1.6.0/YTPlus_5.2.1_21.22.04.ipa"
     },
     {
       "name": "EeveeSpotify",
