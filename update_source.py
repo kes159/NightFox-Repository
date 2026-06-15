@@ -22,17 +22,17 @@ def extract_ipa_info_only(ipa_path):
         with zipfile.ZipFile(ipa_path, 'r') as z:
             plist_path = next(f for f in z.namelist() if f.startswith('Payload/') and f.endswith('.app/Info.plist'))
             app_dir = os.path.dirname(plist_path)
-            
+
             with z.open(plist_path) as f:
                 plist = plistlib.load(f)
                 bundle_id = plist.get('CFBundleIdentifier')
-                
+
                 icon_data = None
                 try:
                     icon_files = plist.get('CFBundleIcons', {}).get('CFBundlePrimaryIcon', {}).get('CFBundleIconFiles', [])
                     if not icon_files:
                         icon_files = plist.get('CFBundleIconFiles', [])
-                    
+
                     if icon_files:
                         target_icon_name = icon_files[-1]
                         icon_path = next(f for f in z.namelist() if f.startswith(app_dir) and target_icon_name in f and f.endswith('.png'))
@@ -59,7 +59,7 @@ def apply_nightfox_branding(entry):
     entry["subtitle"] = "NightFox"
     entry["localizedDescription"] = "NightFox"
 
-# --- 3. 기본 데이터 구조 정의 (news 항목 제거) ---
+# --- 3. 기본 데이터 구조 정의 ---
 base_data = {
     "name": "NightFox Repository",
     "identifier": "com.nightfox.repo",
@@ -69,7 +69,8 @@ base_data = {
     "website": REPO_URL,
     "tintColor": "#00b39e",
     "featuredApps": [],
-    "apps": [] 
+    "apps": [],
+    "news": []
 }
 
 # --- 4. 기존 데이터 로드 및 보정 ---
@@ -78,18 +79,18 @@ if os.path.exists(JSON_FILE):
         try:
             loaded_data = json.load(f)
             base_data['apps'] = loaded_data.get('apps', [])
-            
+            base_data['news'] = loaded_data.get('news', [])
+
             required_fields = ['name', 'identifier', 'subtitle', 'description', 'iconURL', 'website', 'tintColor']
             for field in required_fields:
                 if field in base_data:
                     loaded_data[field] = base_data[field]
 
             base_data.update(loaded_data)
-            base_data['news'] = [] # 기존 news 데이터가 있어도 비움
-            
+
         except Exception as e:
             print(f"기존 JSON 읽기 오류: {e}")
-            
+
 # B. 모든 릴리즈에서 실제 IPA 다운로드 주소 수집
 all_release_assets = {}
 for release in repo.get_releases():
@@ -141,13 +142,13 @@ for ipa_file in ipa_files:
         apply_nightfox_branding(new_app)
         base_data['apps'].append(new_app)
 
-# --- 5. 데이터 최종 정제 (news 키 강제 제거) ---
+# --- 5. 데이터 최종 정제 ---
 def atomic_clean(obj):
     if isinstance(obj, dict):
         cleaned_dict = {
-            k: atomic_clean(v) 
-            for k, v in obj.items() 
-            if k != "news" and v is not None and v != "" and v != [] and v != {}
+            k: atomic_clean(v)
+            for k, v in obj.items()
+            if v is not None and v != "" and v != [] and v != {}
         }
         return cleaned_dict
     elif isinstance(obj, list):
@@ -161,4 +162,4 @@ base_data = atomic_clean(base_data)
 with open(JSON_FILE, 'w', encoding='utf-8') as f:
     json.dump(base_data, f, ensure_ascii=False, indent=2)
 
-print(f"🎉 News 항목이 제거된 {JSON_FILE} 생성이 완료되었습니다.")
+print(f"🎉 {JSON_FILE} 생성이 완료되었습니다.")
